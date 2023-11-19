@@ -1,0 +1,10 @@
+[Unit]
+Description=glances rest service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/glances --config /opt/cfg/glances.conf --quiet --export influxdb2
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+{
+    "LOG_INFO": {
+        "PATH": "/opt/log",
+        "PREFIX": "regi",
+        "FLAG": "file",
+        "LEVEL": "info"
+    },
+    "AMQP_INFO": {
+        "HOST": "localhost",
+        "PORT": 5672,
+        "USER": "cloud",
+        "PWD_FILE": "amqp.txt",
+        "EXCHANGE_SUB": "aasEvent",
+        "BINDKEY_SUB": "cloud.event",
+        "TIMEOUT": 5
+    }
+}

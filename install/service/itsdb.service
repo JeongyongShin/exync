@@ -1,0 +1,16 @@
+[Unit]
+Description=influxdb tsdb service
+
+[Service]
+Environment="AMQP_USER=app_itsdb"
+Environment="AMQP_PWD=ait24680!"
+Environment="TSDB_ORG="
+Environment="TSDB_BUCKET="
+Environment="TSDB_TOKEN="
+
+Type=simple
+ExecStart=/opt/bin/itsdb.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1246 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>urn:open62541.server.application</Uri>
+    <Uri>https://www.smart-factory.kr/datasolution</Uri>
+  </NamespaceUris>
+  <Aliases>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+  </Aliases>
+  <UAObject NodeId="ns=1;s=vNS" BrowseName="1:vNS" ParentNodeId="i=85">
+    <DisplayName>vNS</DisplayName>
+    <Description>vNS</Description>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution" BrowseName="2:CloudDataSolution" ParentNodeId="i=85">
+    <DisplayName>CloudDataSolution</DisplayName>
+    <Description>CloudDataSolution</Description>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.CloudSolution</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.CloudSolution" BrowseName="2:CloudSolution" ParentNodeId="ns=2;s=CloudDataSolution">
+    <DisplayName>CloudSolution</DisplayName>
+    <Description>CloudSolution</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration" BrowseName="2:BasicConfiguration" ParentNodeId="ns=2;s=CloudDataSolution.CloudSolution">
+    <DisplayName>BasicConfiguration</DisplayName>
+    <Description>BasicConfiguration</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.CloudSolution</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.NetworkConnection</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.SamplingInterval</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.NetworkConnection" BrowseName="2:NetworkConnection" ParentNodeId="ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration" DataType="String">
+    <DisplayName>NetworkConnection</DisplayName>
+    <Description>NetworkConnection</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>X.X.X.X</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.SamplingInterval" BrowseName="2:SamplingInterval" ParentNodeId="ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration" DataType="Float">
+    <DisplayName>SamplingInterval</DisplayName>
+    <Description>SamplingInterval</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>100.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution" BrowseName="2:EdgeGWSolution" ParentNodeId="ns=2;s=CloudDataSolution">
+    <DisplayName>EdgeGWSolution</DisplayName>
+    <Description>EdgeGWSolution</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW" BrowseName="2:Nestfield_GW" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution">
+    <DisplayName>Nestfield_GW</DisplayName>
+    <Description>Nestfield_GW</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration" BrowseName="2:BasicConfiguration" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW">
+    <DisplayName>BasicConfiguration</DisplayName>
+    <Description>BasicConfiguration</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.NetworkConnection</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.SamplingInterval</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.NetworkConnection" BrowseName="2:NetworkConnection" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration" DataType="String">
+    <DisplayName>NetworkConnection</DisplayName>
+    <Description>NetworkConnection</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>opc.tcp://X.X.X.X:4840</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.SamplingInterval" BrowseName="2:SamplingInterval" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration" DataType="Float">
+    <DisplayName>SamplingInterval</DisplayName>
+    <Description>SamplingInterval</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>100.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S" BrowseName="2:ProSix6A106F156S" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW">
+    <DisplayName>ProSix6A106F156S</DisplayName>
+    <Description>ProSix6A106F156S</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration" BrowseName="2:BasicConfiguration" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S">
+    <DisplayName>BasicConfiguration</DisplayName>
+    <Description>BasicConfiguration</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.NetworkConnection</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.SamplingInterval</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.NetworkConnection" BrowseName="2:NetworkConnection" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration" DataType="String">
+    <DisplayName>NetworkConnection</DisplayName>
+    <Description>NetworkConnection</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>opc.tcp://X.X.X.X:[PORT]</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.SamplingInterval" BrowseName="2:SamplingInterval" ParentNodeId="ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration" DataType="Float">
+    <DisplayName>SamplingInterval</DisplayName>
+    <Description>SamplingInterval</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>100.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=Nestfield" BrowseName="2:Nestfield" ParentNodeId="i=85">
+    <DisplayName>Nestfield</DisplayName>
+    <Description>Nestfield</Description>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Facilities</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=Nestfield.Identification" BrowseName="2:Identification" ParentNodeId="ns=2;s=Nestfield">
+    <DisplayName>Identification</DisplayName>
+    <Description>Identification</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ManufacturerName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.SupplierName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.URL</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ManufacturerName" BrowseName="2:ManufacturerName" ParentNodeId="ns=2;s=Nestfield.Identification" DataType="String">
+    <DisplayName>ManufacturerName</DisplayName>
+    <Description>ManufacturerName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.SupplierName" BrowseName="2:SupplierName" ParentNodeId="ns=2;s=Nestfield.Identification" DataType="String">
+    <DisplayName>SupplierName</DisplayName>
+    <Description>SupplierName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=Nestfield.Identification.ContactInfo" BrowseName="2:ContactInfo" ParentNodeId="ns=2;s=Nestfield.Identification">
+    <DisplayName>ContactInfo</DisplayName>
+    <Description>ContactInfo</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.Name</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.Email</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.URL</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.Phone</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.Fax</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.Name" BrowseName="2:Name" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo" DataType="String">
+    <DisplayName>Name</DisplayName>
+    <Description>Name</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" BrowseName="2:PhysicalAddress" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo">
+    <DisplayName>PhysicalAddress</DisplayName>
+    <Description>PhysicalAddress</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.CountryCode</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.Street</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.PostalCode</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.City</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.StateCounty</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.CountryCode" BrowseName="2:CountryCode" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" DataType="String">
+    <DisplayName>CountryCode</DisplayName>
+    <Description>CountryCode</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>KR</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.Street" BrowseName="2:Street" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" DataType="String">
+    <DisplayName>Street</DisplayName>
+    <Description>Street</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Haean-ro</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.PostalCode" BrowseName="2:PostalCode" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" DataType="String">
+    <DisplayName>PostalCode</DisplayName>
+    <Description>PostalCode</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>15588 (Zip)</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.City" BrowseName="2:City" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" DataType="String">
+    <DisplayName>City</DisplayName>
+    <Description>City</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Ansan-si</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.StateCounty" BrowseName="2:StateCounty" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress" DataType="String">
+    <DisplayName>StateCounty</DisplayName>
+    <Description>StateCounty</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Sangnok-gu, Gyeonggi-do</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.Email" BrowseName="2:Email" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo" DataType="String">
+    <DisplayName>Email</DisplayName>
+    <Description>Email</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>sales@nestfield.co.kr</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.URL" BrowseName="2:URL" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo" DataType="String">
+    <DisplayName>URL</DisplayName>
+    <Description>URL</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>http://www.nestfield.co.kr/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.Phone" BrowseName="2:Phone" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo" DataType="String">
+    <DisplayName>Phone</DisplayName>
+    <Description>Phone</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>+82-031-400-XXXX</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.ContactInfo.Fax" BrowseName="2:Fax" ParentNodeId="ns=2;s=Nestfield.Identification.ContactInfo" DataType="String">
+    <DisplayName>Fax</DisplayName>
+    <Description>Fax</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification.ContactInfo</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>+82-031-400-XXXX</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=Nestfield.Identification.URL" BrowseName="2:URL" ParentNodeId="ns=2;s=Nestfield.Identification" DataType="String">
+    <DisplayName>URL</DisplayName>
+    <Description>URL</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>http://www.nestfield.co.kr/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=Nestfield.Facilities" BrowseName="2:Facilities" ParentNodeId="ns=2;s=Nestfield">
+    <DisplayName>Facilities</DisplayName>
+    <Description>Facilities</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=Nestfield.Facilities.AssemblyLine_1" BrowseName="2:Nestfield.Facilities.AssemblyLine_1" ParentNodeId="i=85">
+    <DisplayName>Nestfield.Facilities.AssemblyLine_1</DisplayName>
+    <Description>Nestfield.Facilities.AssemblyLine_1</Description>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=Nestfield.Facilities.AssemblyLine_1.Components</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=Nestfield.Facilities.AssemblyLine_1.Components" BrowseName="2:Components" ParentNodeId="ns=2;s=Nestfield.Facilities.AssemblyLine_1">
+    <DisplayName>Components</DisplayName>
+    <Description>Components</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=Nestfield.Facilities.AssemblyLine_1</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S" BrowseName="2:ProSix6A106F156S" ParentNodeId="i=85">
+    <DisplayName>ProSix6A106F156S</DisplayName>
+    <Description>ProSix6A106F156S</Description>
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Nameplate</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Identification</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Documentation</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.Nameplate" BrowseName="2:Nameplate" ParentNodeId="ns=2;s=ProSix6A106F156S">
+    <DisplayName>Nameplate</DisplayName>
+    <Description>Nameplate</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Nameplate.SerialNumber</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerProductDesignation</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Nameplate.YearOfConstruction</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerName" BrowseName="2:ManufacturerName" ParentNodeId="ns=2;s=ProSix6A106F156S.Nameplate" DataType="String">
+    <DisplayName>ManufacturerName</DisplayName>
+    <Description>ManufacturerName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Nameplate</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Nameplate.SerialNumber" BrowseName="2:SerialNumber" ParentNodeId="ns=2;s=ProSix6A106F156S.Nameplate" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>SerialNumber</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Nameplate</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>C481U1538079</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerProductDesignation" BrowseName="2:ManufacturerProductDesignation" ParentNodeId="ns=2;s=ProSix6A106F156S.Nameplate" DataType="String">
+    <DisplayName>ManufacturerProductDesignation</DisplayName>
+    <Description>ManufacturerProductDesignation</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Nameplate</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>6-Axis Robot Arm</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Nameplate.YearOfConstruction" BrowseName="2:YearOfConstruction" ParentNodeId="ns=2;s=ProSix6A106F156S.Nameplate" DataType="String">
+    <DisplayName>YearOfConstruction</DisplayName>
+    <Description>YearOfConstruction</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Nameplate</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>2019</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.Identification" BrowseName="2:Identification" ParentNodeId="ns=2;s=ProSix6A106F156S">
+    <DisplayName>Identification</DisplayName>
+    <Description>Identification</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Identification.ManufacturerName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Identification.DateOfManufacture</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Identification.SupplierName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Identification.SerialNumber</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Identification.ManufacturerName" BrowseName="2:ManufacturerName" ParentNodeId="ns=2;s=ProSix6A106F156S.Identification" DataType="String">
+    <DisplayName>ManufacturerName</DisplayName>
+    <Description>ManufacturerName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Identification.DateOfManufacture" BrowseName="2:DateOfManufacture" ParentNodeId="ns=2;s=ProSix6A106F156S.Identification" DataType="String">
+    <DisplayName>DateOfManufacture</DisplayName>
+    <Description>DateOfManufacture</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>2019-06-01</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Identification.SupplierName" BrowseName="2:SupplierName" ParentNodeId="ns=2;s=ProSix6A106F156S.Identification" DataType="String">
+    <DisplayName>SupplierName</DisplayName>
+    <Description>SupplierName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>Nestfield</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Identification.SerialNumber" BrowseName="2:SerialNumber" ParentNodeId="ns=2;s=ProSix6A106F156S.Identification" DataType="String">
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>SerialNumber</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Identification</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>C481U1538079</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData" BrowseName="2:OperationalData" ParentNodeId="ns=2;s=ProSix6A106F156S">
+    <DisplayName>OperationalData</DisplayName>
+    <Description>OperationalData</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPointName</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPointName" BrowseName="2:CurrentPointName" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData" DataType="String">
+    <DisplayName>CurrentPointName</DisplayName>
+    <Description>CurrentPointName</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>HOME</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition" BrowseName="2:CurrentPosition" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData">
+    <DisplayName>CurrentPosition</DisplayName>
+    <Description>CurrentPosition</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" BrowseName="2:World" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition">
+    <DisplayName>World</DisplayName>
+    <Description>World</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_X</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Y</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Z</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_U</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_V</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_W</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_X" BrowseName="2:Position_X" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_X</DisplayName>
+    <Description>Position_X</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>0.160</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Y" BrowseName="2:Position_Y" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_Y</DisplayName>
+    <Description>Position_Y</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>346.848</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Z" BrowseName="2:Position_Z" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_Z</DisplayName>
+    <Description>Position_Z</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>510.079</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_U" BrowseName="2:Position_U" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_U</DisplayName>
+    <Description>Position_U</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>90.189</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_V" BrowseName="2:Position_V" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_V</DisplayName>
+    <Description>Position_V</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-0.223</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_W" BrowseName="2:Position_W" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World" DataType="Float">
+    <DisplayName>Position_W</DisplayName>
+    <Description>Position_W</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-179.454</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition" BrowseName="2:TargetPosition" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData">
+    <DisplayName>TargetPosition</DisplayName>
+    <Description>TargetPosition</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME" BrowseName="2:HOME" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition">
+    <DisplayName>HOME</DisplayName>
+    <Description>HOME</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" BrowseName="2:World" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME">
+    <DisplayName>World</DisplayName>
+    <Description>World</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_X</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Y</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Z</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_U</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_V</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_W</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_X" BrowseName="2:Position_X" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_X</DisplayName>
+    <Description>Position_X</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>0.160</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Y" BrowseName="2:Position_Y" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_Y</DisplayName>
+    <Description>Position_Y</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>346.848</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Z" BrowseName="2:Position_Z" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_Z</DisplayName>
+    <Description>Position_Z</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>510.079</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_U" BrowseName="2:Position_U" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_U</DisplayName>
+    <Description>Position_U</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>90.189</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_V" BrowseName="2:Position_V" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_V</DisplayName>
+    <Description>Position_V</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-0.223</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_W" BrowseName="2:Position_W" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World" DataType="Float">
+    <DisplayName>Position_W</DisplayName>
+    <Description>Position_W</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-179.454</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1" BrowseName="2:Point1" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition">
+    <DisplayName>Point1</DisplayName>
+    <Description>Point1</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" BrowseName="2:World" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1">
+    <DisplayName>World</DisplayName>
+    <Description>World</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_X</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Y</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Z</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_U</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_V</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_W</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_X" BrowseName="2:Position_X" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_X</DisplayName>
+    <Description>Position_X</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>49.640</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Y" BrowseName="2:Position_Y" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_Y</DisplayName>
+    <Description>Position_Y</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>443.552</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Z" BrowseName="2:Position_Z" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_Z</DisplayName>
+    <Description>Position_Z</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>179.995</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_U" BrowseName="2:Position_U" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_U</DisplayName>
+    <Description>Position_U</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>90.250</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_V" BrowseName="2:Position_V" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_V</DisplayName>
+    <Description>Position_V</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>0.167</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_W" BrowseName="2:Position_W" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World" DataType="Float">
+    <DisplayName>Position_W</DisplayName>
+    <Description>Position_W</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-179.749</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2" BrowseName="2:Point2" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition">
+    <DisplayName>Point2</DisplayName>
+    <Description>Point2</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" BrowseName="2:World" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2">
+    <DisplayName>World</DisplayName>
+    <Description>World</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_X</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Y</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Z</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_U</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_V</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_W</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_X" BrowseName="2:Position_X" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_X</DisplayName>
+    <Description>Position_X</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-53.873</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Y" BrowseName="2:Position_Y" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_Y</DisplayName>
+    <Description>Position_Y</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>443.551</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Z" BrowseName="2:Position_Z" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_Z</DisplayName>
+    <Description>Position_Z</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>179.868</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_U" BrowseName="2:Position_U" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_U</DisplayName>
+    <Description>Position_U</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>90.189</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_V" BrowseName="2:Position_V" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_V</DisplayName>
+    <Description>Position_V</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>0.167</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_W" BrowseName="2:Position_W" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World" DataType="Float">
+    <DisplayName>Position_W</DisplayName>
+    <Description>Position_W</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>-179.496</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus" BrowseName="2:RobotStatus" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData">
+    <DisplayName>RobotStatus</DisplayName>
+    <Description>RobotStatus</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.EmergencyStop</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Safeguard</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Motors</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Power</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.EmergencyStop" BrowseName="2:EmergencyStop" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus" DataType="String">
+    <DisplayName>EmergencyStop</DisplayName>
+    <Description>EmergencyStop</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Safeguard" BrowseName="2:Safeguard" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus" DataType="String">
+    <DisplayName>Safeguard</DisplayName>
+    <Description>Safeguard</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Motors" BrowseName="2:Motors" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus" DataType="String">
+    <DisplayName>Motors</DisplayName>
+    <Description>Motors</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Power" BrowseName="2:Power" ParentNodeId="ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus" DataType="String">
+    <DisplayName>Power</DisplayName>
+    <Description>Power</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.TechnicalData" BrowseName="2:TechnicalData" ParentNodeId="ns=2;s=ProSix6A106F156S">
+    <DisplayName>TechnicalData</DisplayName>
+    <Description>TechnicalData</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.Payload</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.Repeatability</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.Weight</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.NoiseLevel</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" BrowseName="2:MotorPowerConsumption" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData">
+    <DisplayName>MotorPowerConsumption</DisplayName>
+    <Description>MotorPowerConsumption</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor1</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor2</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor3</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor4</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor5</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor6</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor1" BrowseName="2:Motor1" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor1</DisplayName>
+    <Description>Motor1</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>500.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor2" BrowseName="2:Motor2" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor2</DisplayName>
+    <Description>Motor2</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>400.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor3" BrowseName="2:Motor3" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor3</DisplayName>
+    <Description>Motor3</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>200.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor4" BrowseName="2:Motor4" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor4</DisplayName>
+    <Description>Motor4</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>150.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor5" BrowseName="2:Motor5" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor5</DisplayName>
+    <Description>Motor5</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>150.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor6" BrowseName="2:Motor6" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption" DataType="Float">
+    <DisplayName>Motor6</DisplayName>
+    <Description>Motor6</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>150.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" BrowseName="2:MotorOperatingSpeed" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData">
+    <DisplayName>MotorOperatingSpeed</DisplayName>
+    <Description>MotorOperatingSpeed</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_1</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_2</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_3</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_4</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_5</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_6</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_1" BrowseName="2:Motor_1" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_1</DisplayName>
+    <Description>Motor_1</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>480.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_2" BrowseName="2:Motor_2" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_2</DisplayName>
+    <Description>Motor_2</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>460.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_3" BrowseName="2:Motor_3" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_3</DisplayName>
+    <Description>Motor_3</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>528.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_4" BrowseName="2:Motor_4" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_4</DisplayName>
+    <Description>Motor_4</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>537.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_5" BrowseName="2:Motor_5" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_5</DisplayName>
+    <Description>Motor_5</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>546.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_6" BrowseName="2:Motor_6" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed" DataType="Float">
+    <DisplayName>Motor_6</DisplayName>
+    <Description>Motor_6</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>693.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Payload" BrowseName="2:Payload" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData">
+    <DisplayName>Payload</DisplayName>
+    <Description>Payload</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Rated</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Max</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Rated" BrowseName="2:Rated" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Payload" DataType="Float">
+    <DisplayName>Rated</DisplayName>
+    <Description>Rated</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.Payload</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>2.5</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Max" BrowseName="2:Max" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Payload" DataType="Float">
+    <DisplayName>Max</DisplayName>
+    <Description>Max</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData.Payload</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>6.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Repeatability" BrowseName="2:Repeatability" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData" DataType="Float">
+    <DisplayName>Repeatability</DisplayName>
+    <Description>Repeatability</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>20.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.Weight" BrowseName="2:Weight" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData" DataType="Float">
+    <DisplayName>Weight</DisplayName>
+    <Description>Weight</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Float>31.0</uax:Float>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.TechnicalData.NoiseLevel" BrowseName="2:NoiseLevel" ParentNodeId="ns=2;s=ProSix6A106F156S.TechnicalData" DataType="Int32">
+    <DisplayName>NoiseLevel</DisplayName>
+    <Description>NoiseLevel</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.TechnicalData</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:Int32>76</uax:Int32>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.Documentation" BrowseName="2:Documentation" ParentNodeId="ns=2;s=ProSix6A106F156S">
+    <DisplayName>Documentation</DisplayName>
+    <Description>Documentation</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Documentation.Document001</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001" BrowseName="2:Document001" ParentNodeId="ns=2;s=ProSix6A106F156S.Documentation">
+    <DisplayName>Document001</DisplayName>
+    <Description>Document001</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Documentation</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Documentation.Document001.Language</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentType</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentSize</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001.Language" BrowseName="2:Language" ParentNodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001" DataType="String">
+    <DisplayName>Language</DisplayName>
+    <Description>Language</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Documentation.Document001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>en</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentType" BrowseName="2:DocumentType" ParentNodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001" DataType="String">
+    <DisplayName>DocumentType</DisplayName>
+    <Description>DocumentType</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Documentation.Document001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>pdf</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentSize" BrowseName="2:DocumentSize" ParentNodeId="ns=2;s=ProSix6A106F156S.Documentation.Document001" DataType="String">
+    <DisplayName>DocumentSize</DisplayName>
+    <Description>DocumentSize</Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;s=ProSix6A106F156S.Documentation.Document001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Value>
+      <uax:String>349 KB</uax:String>
+    </Value>
+  </UAVariable>
+</UANodeSet>

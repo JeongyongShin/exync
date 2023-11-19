@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+	    
+	    <title>AASX PACKAGE EXPLORE</title>
+	    
+		<link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+		<link href="/resources/js/fontawesome/css/all.css" rel="stylesheet">
+
+		<script type="text/javascript" src="/resources/js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="/resources/js/common.js"></script>
+		<script src="/resources/js/jsencrypt.min.js"></script>
+		
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+			
+				background-color:#161719;
+				
+			}
+			.ccb {text-align: center;}
+			.login_box {margin:0 auto; width:500px; height:auto;}
+			.login_title {height:100px; color:white; text-align: center; font-size: 30px; font-weight: bold; }
+			.login_bar {height:50px;}
+			.login_btn {height:30px; width:130px; font-size: 20px; font-weight: bold;}
+		</style>
+		
+		<script type="text/javascript">
+		function login(){
+			
+			var form = document.LoginForm;
+			
+	 		if(!checkParameter(form.userId.value)){
+				alert("아이디를 입력해주세요.");
+				return;
+			}else if(!checkParameter(form.password.value)){
+				alert("비밀번호를 입력해주세요.");
+				return;
+			}
+
+			var formData = $("#LoginForm").serialize();
+			
+			$.ajax({
+				type: 'POST',
+				url: '/login',
+				data: formData,
+			    //contentType: "application/json",
+				dataType : "json",
+				global: false,
+            	cache : false,
+				error:function(){
+					//alert("add fail");
+				},
+				success:function(data){
+					if(data.code == 100){
+						location.href = '/main';
+					}else{
+						alert('계정정보를 확인해주세요')
+					}
+				}
+			});
+		}
+		
+		</script>
+	</head>
+<body>
+	<div class="ccb">
+		<div class="ccl">
+			<div class="login_box">
+				<form role="form" name="LoginForm" id="LoginForm">
+					{% csrf_token %}
+					<div class="login_title"><div class="ccb"><div class="ccl">CLOUD MANAGER</div></div></div>
+					<div class="login_form">
+						<div><input class="login_text_field" name="userId" type="text"/></div>
+						<div><input class="login_text_field" name="password" type="password"/></div>
+					</div>
+					<div class="login_bar">
+						<div class="ccb"><div class="ccl"><input class="login_btn" type="button" value="Login" onclick="login()"/></div></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

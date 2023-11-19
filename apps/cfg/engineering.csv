@@ -1,0 +1,76 @@
+ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.NetworkConnection,Nestfield_GW, , ,50,-1
+ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.SamplingInterval,Nestfield_GW, , ,50,-1
+ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.NetworkConnection,Nestfield_GW, , ,50,-1
+ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.BasicConfiguration.SamplingInterval,Nestfield_GW, , ,50,-1
+ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.NetworkConnection,Nestfield_GW, , ,50,-1
+ns=2;s=CloudDataSolution.EdgeGWSolution.Nestfield_GW.ProSix6A106F156S.BasicConfiguration.SamplingInterval,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ManufacturerName,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.SupplierName,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.Name,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.CountryCode,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.Street,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.PostalCode,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.City,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.StateCounty,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.Email,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.URL,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.Phone,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.ContactInfo.Fax,Nestfield_GW, , ,50,-1
+ns=2;s=Nestfield.Identification.URL,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerName,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Nameplate.SerialNumber,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerProductDesignation,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Nameplate.YearOfConstruction,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Identification.ManufacturerName,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Identification.DateOfManufacture,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Identification.SupplierName,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.Identification.SerialNumber,Nestfield_GW, , ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPointName,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPointName,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_X,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_X,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Y,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_Y,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Z,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_Z,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_U,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_U,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_V,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_V,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_W,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.CurrentPosition.World.Position_W,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_X,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Y,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Z,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_U,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_V,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_W,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_X,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Y,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Z,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_U,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_V,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_W,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_X,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Y,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Z,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_U,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_V,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_W,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.EmergencyStop,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.RobotStatus.EmergencyStop,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Safeguard,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.RobotStatus.Safeguard,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Motors,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.RobotStatus.Motors,50,-1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Power,Nestfield_GW,ProSix6A106F156S,ns=6;s=::AsGlobalPV:EpsonProsixC4_A601S.OperationalData.RobotStatus.Power,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor1,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor2,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor3,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor4,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor5,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor6,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_1,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_2,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_3,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_4,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_5,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_6,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Rated,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Max,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.Repeatability,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.Weight,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.TechnicalData.NoiseLevel,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.Language,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentType,Nestfield_GW,ProSix6A106F156S, ,50,-1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentSize,Nestfield_GW,ProSix6A106F156S, ,50,-1

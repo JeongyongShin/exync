@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <title>DNA 4.0</title>
+    
+    <!--<link rel="stylesheet" type="text/css" href="/resources/extjs/classic/theme-triton/resources/theme-triton-all.css" />-->
+    <link rel="stylesheet" type="text/css" href="/resources/extjs/classic/theme-triton/resources/theme-triton-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/extjs/packages/charts/classic/classic/resources/charts-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/extjs/packages/ux/classic/triton/resources/ux-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+    <!--<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/resources/css/font-awesome.min.css" />-->
+    
+    <link rel="stylesheet" type="text/css" href="/resources/js/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ext-custom.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/simplebar.css" />
+    
+    <script type="text/javascript" src="/resources/extjs/ext-all.js"></script>
+    <script type="text/javascript" src="/resources/extjs/packages/charts/classic/charts.js"></script>
+    <script type="text/javascript" src="/resources/extjs/packages/ux/classic/ux.js"></script>
+    <script type="text/javascript" src="/resources/extjs/classic/theme-triton/theme-triton.js"></script>
+    <script type="text/javascript" src="/resources/js/sortable.js"></script>
+    <script type="text/javascript" src="/resources/extjs/custom/DateTimePicker.js"></script>
+    <script type="text/javascript" src="/resources/extjs/custom/DateTimeField.js"></script>
+    <script type="text/javascript" src="/resources/js/xml2json.min.js"></script>
+    <script type="text/javascript" src="/resources/js/md5.js"></script>
+    <script type="text/javascript" src="/resources/js/aasx.js"></script>
+    
+    <script type="text/javascript" src="/resources/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resources/js/stomp.js"></script>
+    <script type="text/javascript" src="/resources/js/cookie.js"></script>
+    <script type="text/javascript" src="/resources/js/simplebar.js"></script>
+
+    <script type="text/javascript" src="/resources/js/common.js"></script>
+    <script type="text/javascript" src="/resources/app/monitor/app.js"></script>
+
+    <style type="text/css">
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-row-span .x-grid3-row {
+        border-bottom: 0;
+    }
+
+    .grid-row-span .x-grid3-col {
+        border-bottom: 1px solid #ededed;
+    }
+
+    .grid-row-span .row-span {
+        border-bottom: 1px solid #fff;
+    }
+
+    .grid-row-span .row-span-first {
+        position: relative;
+    }
+
+    .grid-row-span .row-span-first .x-grid3-cell-inner {
+        position: absolute;
+    }
+
+    .grid-row-span .row-span-last {
+        border-bottom: 1px solid #ededed;
+    }
+
+    .x-panel-body-default {
+        background-color: transparent !important;
+
+    }
+
+    .icon_motor{
+        width:100%;
+        height:100%;
+        background:url(/resources/images/icons/motor.png) 0px 0px no-repeat;
+    }
+
+    .icon_package{
+        width:30px;
+        background:url(/resources/images/icons/icon_package.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_env{
+        width:30px;
+        background:url(/resources/images/icons/icon_env.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_asset{
+        width:30px;
+        background:url(/resources/images/icons/icon_asset.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_cd{
+        width:30px;
+        background:url(/resources/images/icons/icon_cd.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_aas{
+        width:30px;
+        background:url(/resources/images/icons/icon_aas.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_prop{
+        width:30px;
+        background:url(/resources/images/icons/icon_prop.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_sub{
+        width:30px;
+        background:url(/resources/images/icons/icon_sub.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_sub2{
+        width:30px;
+        background:url(/resources/images/icons/icon_sub2.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_coll{
+        width:30px;
+        background:url(/resources/images/icons/icon_coll.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+    
+    /*.dashboardCSS{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .dashboard-itemCSS{
+            float: left;
+            display: inline-block
+        }*/
+
+        .aasx_tag_box {position:relative; width:100%; height:100%; background-color:transparent; overflow:auto}
+        .aasx_tag_box .aasx_tag_title {position:relative; margin-top:20px; left:1%; padding-left:10px; width:98%; height:30px; color:white; font-size: 17px; font-weight: bold; background-color:#00bbff;}
+        .aasx_tag_box .aasx_tag_sub_title {position:relative; left:2%; margin-top:20px; padding-left:10px; width:97%; height:20px; color:white; font-size: 14px; background-color:#828282;}
+        .aasx_tag_box .aasx_tag_content {position:relative; width:97%; left:2%; height:20px; margin-top:3px; color:white; background-color:transparent;}
+        .aasx_tag_box .aasx_tag_content .aasx_tag_content_title {position:absolute; top:0px; left:10px; bottom:0px; width:130px;}
+        .aasx_tag_box .aasx_tag_content .aasx_tag_content_value {position:absolute; top:0px; left:140px; bottom:0px; right:0px;}
+    </style>
+    
+    <script type="text/javascript">
+        var aasxData = null;
+
+        function cs(text){
+            return '<div class="ccb"><div class="ccl">'+text+'</div></div>';
+        }
+
+        let userName = '${USER_ID}';
+        /*var ws = new WebSocket('ws://192.168.1.2:15674/ws');
+        var client = Stomp.over(ws);
+        
+        var eCallback = function(msg){
+            console.log(msg);
+        }
+        var dCallback = function(msg){
+            //var jsonResult = Ext.JSON.decode(result.responseText);
+
+            pointParser(msg);
+            //console.log(msg);
+        }
+        
+        //[{"measurement": "PBMS2_B3", "tags": {"bus_id": "E30001", "can_type": 0}, "time": "2020-03-30, 21:13:18", "fields": {"raw_time": "2020-03-30, 21:13:18", "pbms_V_BAT_Max": 0, "pbms_V_BAT_Min": 0, "pbms_I_CHG_Max": 0, "pbms_I_DCHG_Max": 0}}]
+        
+        var onConnect = function() {
+            console.log('connected');
+            client.subscribe("/queue/rems_equeue", eCallback);
+            client.subscribe("/queue/rems_dqueue", dCallback);
+
+        };
+        
+        var onDisConnect = function() {
+            console.log('disconnected');
+
+        };
+        
+        //{"time": "2020-03-30, 21:04:06", "bus_id": "E30001", "message": "connect failed"}
+        
+        var onError =  function() {
+            console.log('error');
+        };
+        
+        var ws = new WebSocket('ws://192.168.1.2:15674/ws');
+        var client = Stomp.over(ws);
+        
+        function connectMQTT(cCallback, eCallback){
+            client.connect('cho', 'cho', cCallback, eCallback, '/');
+        }
+        
+        function disconnectMQTT(dCallback){
+            disconnect(dCallback);
+        }
+        
+        function mqttSubscribe(name, callback){
+            client.subscribe(name, callback);
+        }*/
+        
+        
+        var myMask;
+        function showLoading(isShow, panel){
+            if(myMask == null){
+                myMask= new Ext.LoadMask({msg    : 'Please wait...', target:panel});
+            }
+            if(isShow)myMask.show();
+            else myMask.hide();
+        }
+        
+        function getCanTypeText(type){
+            if(type=='01'){
+                return 'Battery';
+            }else if(type=='02'){
+                return 'Motor';
+            }else if(type=='03'){
+                return 'etc';
+            }
+        }
+    
+        var pointMap = {};
+        var pointKey = [];
+    
+        function pointParser(datas){
+            //[{"measurement": "PBMS2_B3", "tags": {"bus_id": "E30001", "can_type": 0}, "time": "2020-03-30, 21:13:18", "fields": {"raw_time": "2020-03-30, 21:13:18", "pbms_V_BAT_Max": 0, "pbms_V_BAT_Min": 0, "pbms_I_CHG_Max": 0, "pbms_I_DCHG_Max": 0}}]
+            for(var i=0; i<datas.length;i++){
+                if(pointMap[datas[i].measurement]==null)pointMap[datas[i].measurement] = {}; 
+                let keys = Object.keys(datas[i].fields);
+                pointMap[datas[i].measurement].time = datas[i].time;
+                for(var y=0; y< keys.length;y++){
+                    pointMap[datas[i].measurement][keys[y].toLowerCase()] = datas[i].fields[keys[y]];
+                }
+            }
+            //console.log(pointMap);
+        }
+        
+        function eventParser(datas){
+            var eventString = "";
+
+            let events = datas.split(',');
+            for(var i=0;i<events.length;i++){
+                let event = events[i];
+                var value = event.split('=');
+                if(value[1]==1 && value[0].toLowerCase().indexOf('reserved')<0){
+                    eventString+=value[0];
+                    if(i<events.length-1)eventString+=', ';
+                }
+            }
+            if(eventString.length!=0)eventString = eventString.substring(0, eventString.length-2);
+            return eventString;
+        }
+        
+        function getPointValue(ms, key){
+            return pointMap[ms][key.toLowerCase()];
+            
+        }
+        
+        function createTab(title, id, size){
+            var tag = '<div class="tab_bar"><div id="'+id+'" class="tab_bar_box '+size+'">';
+            tag+='<div class="ccb"><div class="ccl">'+title+'</div></div>';
+            tag+='</div></div>';
+            return tag;
+        }
+        
+        
+        let fvKey = 'BUS_FAV';
+        var fvList = [];
+        
+        //deleteCookie(fvKey);
+        
+        function getFvList(){
+            let ck = getCookie(fvKey);
+            if(ck != null)fvList = decodeURIComponent(ck).split('|');
+        }
+        
+        function getFv(busId){
+            for(var i=0; i<fvList.length; i++){
+                if(fvList[i]==busId){
+                    return true;
+                }
+            }
+            return false;
+        }
+    
+        function setFv(busId){
+            if(!getFv(busId)){
+                fvList.push(busId);
+            }
+            setCookie(fvKey, fvList.join('|'));
+        }
+        
+        function removeFv(busId){
+            for(var i=0; i<fvList.length; i++){
+                if(fvList[i]==busId){
+                    fvList.splice(i, 1);
+                    break;
+                }
+            }
+            setCookie(fvKey, fvList.join('|'));
+        }
+        
+        getFvList();    	
+            
+	</script>
+</head>
+<body>
+</body>
+</html>

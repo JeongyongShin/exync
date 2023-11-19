@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <title>DNA 4.0</title>
+    
+    <!--<link rel="stylesheet" type="text/css" href="/resources/extjs/classic/theme-triton/resources/theme-triton-all.css" />-->
+    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/resources/theme-triton-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/classic/resources/charts-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/triton/resources/ux-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+    <!--<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/resources/css/font-awesome.min.css" />-->
+    
+    <link rel="stylesheet" type="text/css" href="/resources/js/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/resources/css/ext-custom.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/simplebar.css" />
+    
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/ext-all.js"></script>
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/charts.js"></script>
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/ux.js"></script>
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/theme-triton.js"></script>
+    <script type="text/javascript" src="/resources/js/sortable.js"></script>
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimePicker.js"></script>
+    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimeField.js"></script>
+
+    <script type="text/javascript" src="/resources/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.maphilight.min.js"></script>
+    <script type="text/javascript" src="/resources/js/stomp.js"></script>
+    <script type="text/javascript" src="/resources/js/cookie.js"></script>
+    <script type="text/javascript" src="/resources/js/simplebar.js"></script>
+    <script type="text/javascript" src="/resources/js/common.js"></script>
+    <script type="text/javascript" src="/resources/js/xml2json.min.js"></script>
+    <script type="text/javascript" src="/resources/js/xmllint.js"></script>
+    <script type="text/javascript" src="/resources/js/md5.js"></script>
+    <script type="text/javascript" src="/resources/js/aasx.js"></script>
+
+
+    <script type="text/javascript">
+        Ext.application({
+            name: 'app',
+            appFolder: '/app/main',
+            mainView: '{{view}}',
+            controllers: [
+                '{{controller}}'
+            ],
+            launch: function() {
+                Ext.getCmp('topPanel').setTopTitle('{{title}}');
+            }
+        });
+
+        let topMenu = Ext.create('Ext.data.Store', {
+            fields: ['abbr', 'name'],
+            data : [
+        {% if user.is_admin %}
+                {"abbr":"ax", "img":'/resources/images/icons/icon_aasx.png', "name":"AASX PACKGE BROWSER"},
+                {"abbr":"ct", "img":'/resources/images/icons/icon_server.png', "name":"클라우드 상태 모니터링"},
+                {"abbr":"mt", "img":'/resources/images/icons/icon_dashboard.png', "name":"기기 모니터링"},
+                {"abbr":"ht", "img":'/resources/images/icons/icon_history.png', "name":"히스토리"},
+                {"abbr":"uc", "img":'/resources/images/icons/icon_user.png', "name":"사용자관리"}
+        {% else %}
+                {"abbr":"mt", "img":'/resources/images/icons/icon_dashboard.png', "name":"모니터링"},
+                {"abbr":"ht", "img":'/resources/images/icons/icon_history.png', "name":"히스토리"},
+        {% endif %}
+            ]
+        });
+
+        let dUrl = '{{url}}';
+
+        let configTab = [{
+            itemId:'userConfigWindowTab_1',
+            html:cs('AASX 파일 관리')
+        },{
+            itemId:'userConfigWindowTab_2',
+            html:cs('AAS Repository')
+        },{
+            itemId:'userConfigWindowTab_3',
+            html:cs('계정 설정')
+        }{% if user.is_admin %},{
+            itemId:'userConfigWindowTab_4',
+            html:cs('대쉬보드 설정')
+        }{% endif %}];
+
+        let configMenu = [{
+            itemId:'tab_1',
+            xtype:'AASXConfigPanel'
+        },{
+            itemId:'tab_2',
+            xtype:'RepoConfigPanel'
+        },{
+            itemId:'tab_3',
+            xtype:'UserConfigPanel'
+        }{% if user.is_admin %},{
+            itemId:'tab_4',
+            xtype:'DashboardConfigPanel'
+        }{% endif %}];
+
+    </script>
+
+    <style type="text/css">
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+	    padding: 0;
+        margin: 0;
+    }
+
+    .grid-row-span .x-grid3-row {
+        border-bottom: 0;
+    }
+
+    .grid-row-span .x-grid3-col {
+        border-bottom: 1px solid #ededed;
+    }
+
+    .grid-row-span .row-span {
+        border-bottom: 1px solid #fff;
+    }
+
+    .grid-row-span .row-span-first {
+        position: relative;
+    }
+
+    .grid-row-span .row-span-first .x-grid3-cell-inner {
+        position: absolute;
+    }
+
+    .grid-row-span .row-span-last {
+        border-bottom: 1px solid #ededed;
+    }
+
+    .x-panel-body-default {
+        background-color: transparent !important;
+
+    }
+
+    .icon_motor{
+        width:100%;
+        height:100%;
+        background:url(/resources/images/icons/motor.png) 0px 0px no-repeat;
+    }
+
+    .icon_package{
+        width:30px;
+        background:url(/resources/images/icons/icon_package.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_env{
+        width:30px;
+        background:url(/resources/images/icons/icon_env.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_asset{
+        width:30px;
+        background:url(/resources/images/icons/icon_asset.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_cd{
+        width:30px;
+        background:url(/resources/images/icons/icon_cd.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_aas{
+        width:30px;
+        background:url(/resources/images/icons/icon_aas.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_prop{
+        width:30px;
+        background:url(/resources/images/icons/icon_prop.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_sub{
+        width:30px;
+        background:url(/resources/images/icons/icon_sub.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_sub2{
+        width:30px;
+        background:url(/resources/images/icons/icon_sub2.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_file{
+        width:30px;
+        background:url(/resources/images/icons/icon_file.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_coll{
+        width:30px;
+        background:url(/resources/images/icons/icon_coll.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_ref{
+        width:30px;
+        background:url(/resources/images/icons/icon_ref.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_mlp{
+        width:30px;
+        background:url(/resources/images/icons/icon_mlp.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_ent{
+        width:30px;
+        background:url(/resources/images/icons/icon_ent.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_rel{
+        width:30px;
+        background:url(/resources/images/icons/icon_rel.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_rela{
+        width:30px;
+        background:url(/resources/images/icons/icon_rela.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_img{
+        width:30px;
+        background:url(/resources/images/icons/icon_img.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_doc{
+        width:30px;
+        background:url(/resources/images/icons/icon_doc.png) 0px 8px no-repeat;
+        background-size:30px;
+    }
+
+    .icon_mainmenu {
+        width:20px;
+        background:url(/resources/images/icons/icon_menu.png) 0px 5px no-repeat;
+        background-size:20px;
+    }
+
+    .textTransparent {
+        height: 25px !important; // this will give the height
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        margin: 0 !important;
+    }
+    
+    /*.dashboardCSS{
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .dashboard-itemCSS{
+            float: left;
+            display: inline-block
+        }*/
+
+        .aasx_tag_box {position:relative; width:100%; height:100%; background-color:transparent; overflow:auto}
+        .aasx_tag_box .aasx_tag_title {position:relative; margin-top:20px; left:1%; padding-left:10px; width:98%; height:30px; color:white; font-size: 17px; font-weight: bold; background-color:#00bbff;}
+        .aasx_tag_box .aasx_tag_sub_title {position:relative; left:2%; margin-top:20px; padding-left:10px; width:97%; height:20px; color:white; font-size: 14px; background-color:#828282;}
+        .aasx_tag_box .aasx_tag_subbox {position:relative;}
+        .aasx_tag_box .aasx_tag_content {position:relative; width:97%; left:2%; height:20px; margin-top:3px; color:white; background-color:transparent; font-size:14px;}
+        .aasx_tag_box .aasx_tag_content.edit{margin-top:10px; margin-bottom:10px;}
+        .aasx_tag_box .aasx_tag_content.edit input[type="text"]{width:50%}
+        .aasx_tag_box .aasx_tag_content .aasx_tag_content_title {position:absolute; top:0px; left:10px; bottom:0px; width:130px;}
+        .aasx_tag_box .aasx_tag_content .aasx_tag_content_value {position:absolute; top:0px; left:140px; bottom:0px; right:0px;}
+    </style>
+    
+    <script type="text/javascript">
+        var aasxData = null;
+        var aasx = new AASX();
+        let uName = '{{user.user_id}}';
+        let ak = '{{user.api_key}}';
+        let ph = '{{user.phone_number}}';
+
+        let userName = '${USER_ID}';
+        
+        var myMask;
+        function showLoading(isShow, panel){
+            if(!isShow && myMask == null)return;
+            if(myMask == null){
+                myMask= new Ext.LoadMask({msg    : 'Please wait...', target:panel});
+            }
+            if(isShow)myMask.show();
+            else {
+                myMask.hide();
+                myMask = null;
+            }
+        }
+
+        function showContentImage(title, aNm, path){
+            var myImage = Ext.create('Ext.Img', {
+                centered:true,
+                src: '/aasx/thumbnail?aasxNm='+aNm+'&path=' + path,
+            });
+            picWin = Ext.create('Ext.window.Window', {
+                title: title,
+                width: 700,
+                height: 700,
+                maximizable: true,
+                activeItem: 0,
+                //style:{'text-align': 'center','vertical-align': 'middle'},
+                items: [myImage]
+            })
+            picWin.show();
+        }
+            
+	</script>
+</head>
+<body>
+</body>
+</html>

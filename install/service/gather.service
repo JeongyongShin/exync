@@ -1,0 +1,16 @@
+[Unit]
+Description=opcua gather service
+
+[Service]
+Environment="AMQP_USER=app_gather"
+Environment="AMQP_PWD=ag13579!"
+Environment="OPCUA_NAME=Nestfield_GW"
+Environment="OPCUA_USER=nestfield"
+Environment="OPCUA_PWD=nestfield12!"
+
+Type=simple
+ExecStart=/opt/bin/gather.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

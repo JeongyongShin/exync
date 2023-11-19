@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="EUC-KR">
+    <title>Insert title here</title>
+
+    <style type="text/css">
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+
+    <script src="/resources/js/stomp.js"></script>
+    <script src="/resources/js/mqtt.js"></script>
+    <script src="/resources/js/chart.min.js"></script>
+    <script type="text/javascript">
+        let lineSize = 500;
+        var lineData = []
+        var minData = [];
+        var maxData = [];
+        var lineLabel = [];
+        var minValue = 0;
+        var maxValue = 0;
+        var isMinMax = false;
+
+        var tagId = '{{tagId}}';
+
+        if(tagId == 'ns=2;s=Hopper.Monitoring.Hopper_Monitoring.Hopper_Temp_Monitoring.Hopper_Temp'){
+            maxValue = 52;
+            minValue = 48;
+            isMinMax = true;
+        }else if(tagId == 'ns=2;s=Hopper.Monitoring.Hopper_Monitoring.Hopper_Humidity_Monitoring.Hopper_Humidity'){
+            maxValue = 11.0;
+            minValue = 8.8;
+            isMinMax = true;
+        }else if(tagId == 'ns=2;s=Nozzle.Monitoring.Nozzle_Monitoring.Nozzle_Temp_Monitoring.Nozzle_Temp'){
+            maxValue = 253.0;
+            minValue = 246.0;
+            isMinMax = true;
+        }else if(tagId == 'ns=2;s=Mold.Monitoring.Mold_Monitoring.Max_Mold_Temp_Monitoring.Max_Mold_Temp'){
+            maxValue = 140.0;
+            minValue = 135.0;
+            isMinMax = true;
+        }else if(tagId == 'ns=2;s=Mold.Monitoring.Mold_Monitoring.Max_Mold_Pressure_Monitoring.Max_Mold_Pressure'){
+            maxValue = 325.0;
+            minValue = 319.0;
+            isMinMax = true;
+        }else if(tagId == 'ns=2;s=Mold.Monitoring.Mold_Monitoring.VP_Mold_Pressure_Monitoring.VP_Mold_Pressure'){
+            maxValue = 62.0;
+            minValue = 59.0;
+            isMinMax = true;
+        }
+
+        var socketClient = null;
+        var lastTime = '';
+
+        function leadingZeros(n, digits) {
+            var zero = '';
+            n = n.toString();
+            if (n.length < digits) {
+              for (var i = 0; i < digits - n.length; i++)
+                zero += '0';
+            }
+            return zero + n;
+        }
+
+        function getTimeStamp(val) {
+            var d = null;
+            if(val == null){
+                d = new Date();
+            }else{
+                d = val;
+            }
+            var s = leadingZeros(d.getHours(), 2) + ':' +
+            leadingZeros(d.getMinutes(), 2) + ':' +
+            leadingZeros(d.getSeconds(), 2);
+            return s;
+        }
+
+        function getDateTimeStampNanoSecond(val) {
+            var d = null;
+            var nano = 0;
+            if(val == null){
+                d = new Date();
+            }else{
+                var ut = val/1000000;
+                nano = ((ut - parseInt(ut)+'')).replace('0.','');
+                d = new Date(ut);
+            }
+            var s =
+            leadingZeros(d.getFullYear(), 4) + '-' +
+            leadingZeros(d.getMonth() + 1, 2) + '-' +
+            leadingZeros(d.getDate(), 2) + ' ' +
+            leadingZeros(d.getHours(), 2) + ':' +
+            leadingZeros(d.getMinutes(), 2) + ':' +
+            leadingZeros(d.getSeconds(), 2) + '.' +
+            nano;
+            return s;
+        }
+
+        var myChart;
+        function addData(data){
+            var isMax = false;
+            var timeText = getTimeStamp(new Date(data.time/1000000))
+            if(lineData.length > lineSize){
+                lineData.shift();
+                lineLabel.shift();
+                if(timeText == lastTime){
+                    lineLabel.push(timeText);
+                }else{
+                    lineLabel.push(timeText);
+                    lastTime = timeText;
+                }
+            }else {
+                if(timeText == lastTime){
+                    lineLabel[lineData.length] = timeText;
+
+                }else{
+                    lineLabel[lineData.length] = timeText;
+                    lastTime = timeText;
+                }
+            }
+
+            lineData.push(data.value);
+            myChart.update()
+
+            document.getElementById('TAG_TIME').innerHTML = 'Time : ' + getDateTimeStampNanoSecond(data.time);
+            document.getElementById('TAG_VALUE').innerHTML = 'Value : ' + data.value;
+
+        }
+
+        var connectCallback = function (isConnect){
+            if(isConnect){
+                mqttSubscription('/exchange/mos_exchanges',descMessage)
+            }
+        }
+        var descMessage = function (msg){
+            //Js
+            let data = JSON.parse(msg.body);
+            if(data.field === tagId){
+                addData(data);
+            }
+        }
+
+
+        function updateValue(){
+
+        }
+
+        function init() {
+
+            var chart = document.getElementById('chart').getContext('2d');
+            var labels = lineLabel;
+
+            for(var i=0; i<lineSize; i++){
+                labels.push('');
+                if(isMinMax){
+                    maxData.push(maxValue);
+                    minData.push(minValue);
+                }
+            }
+            var opts = {
+                width:'100%',
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: lineData,
+                        borderColor: '#FFFFFF',
+                        borderWidth:1,
+                        pointRadius:0,
+                        backgroundColor: 'transparent',
+                        yAxisID: 'y',
+                    },
+                    {
+                        data: maxData,
+                        borderColor: '#ff0000',
+                        borderWidth:2,
+                        pointRadius:0,
+                        backgroundColor: 'transparent',
+                        yAxisID: 'y',
+                    },
+                    {
+                        data: minData,
+                        borderColor: '#ff0000',
+                        borderWidth:2,
+                        pointRadius:0,
+                        backgroundColor: 'transparent',
+                        yAxisID: 'y',
+                    }
+                    ]
+                },
+                options: {
+                    fill:false,
+                    responsive: false,
+
+                    plugins: {
+                        legend:{
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                        },
+                        x: {
+                            display: false,
+                            bounds:'ticks',
+                            max:lineSize,
+                        }
+                    },
+                    animation: {
+                        duration: 0
+                    }
+                },
+            };
+            if(isMinMax){
+                opts.options.scales.y.min = minValue-((maxValue-minValue)*0.1);
+                opts.options.scales.y.max = maxValue-((maxValue-minValue)*0.1);
+            }
+            myChart = new Chart(chart, opts);
+            connectMQTT(connectCallback);
+        }
+    </script>
+
+</head>
+<body onload="init()">
+<div class="ccb"><div class="ccl">
+
+<div class="chart-container" style="position: relative; width:100%; height: 300px">
+<canvas id="chart" width="800" height="150">
+</canvas>
+    <H2 id="TAG_TIME" style="color: white"></H2>
+    <H2 id="TAG_VALUE" style="color: white"></H2>
+    </div>
+</div></div>
+</body>
+</html>

@@ -2,8 +2,8 @@
 
 git clone https://github.com/DaveGamble/cJSON.git
 cd cJSON
-mkdir build
+sudo mkdir build
 cd build
-cmake ..
-make clean
-make install
+sudo cmake ..
+sudo make clean
+sudo make install

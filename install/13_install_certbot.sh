@@ -1,3 +1,3 @@
 #!/bin/sh
 
-snap install --classic certbot
+sudo snap install --classic certbot

@@ -3,6 +3,11 @@ import os
 import sys
 
 def main():
+
+    # print(os.environ['MYSQL_DB'])
+    # print(os.environ['MYSQL_USER'])
+    # print(os.environ['MYSQL_PWD'])
+
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
     try:
         #from django.core.wsgi import get_wsgi_application

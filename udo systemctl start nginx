@@ -1,0 +1,16 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Tue 2023-11-21 23:00:51 KST; 4min 34s ago
+     Docs: man:nginx(8)
+ Main PID: 1609 (nginx)
+    Tasks: 5 (limit: 4915)
+   CGroup: /system.slice/nginx.service
+           ├─1609 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+           ├─1614 nginx: worker process
+           ├─1615 nginx: worker process
+           ├─1616 nginx: worker process
+           └─1617 nginx: worker process
+
+11월 21 23:00:51 jy-desktop systemd[1]: Starting A high performance web server and a reverse proxy server...
+11월 21 23:00:51 jy-desktop systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument
+11월 21 23:00:51 jy-desktop systemd[1]: Started A high performance web server and a reverse proxy server.

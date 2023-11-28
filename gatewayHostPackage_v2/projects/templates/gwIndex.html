@@ -1,0 +1,1158 @@
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+{{ super() }}
+{% endblock%}
+
+{% block content %}
+    
+<div class="container" id="content">
+
+<h1>  </h1>
+<br>
+<div style="text-align: right;">
+      <p>Click <a href="/logout">here</a> to logout.</p>
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Gateway 시스템</h3>
+	<br>
+	<table>
+	    <tr>
+      		<td>Gateway Name</td>
+		<td>&nbsp&nbsp</td>
+     		<td id="gwName">shinwo-gw1</td>
+	    </tr>
+    	    <tr>
+      		<td>Uptime</td>
+		<td></td>
+      		<td id="uptime">1 day, 8:10:20</td>
+	    </tr>
+    	    <tr>
+      		<td>CPU Core</td>
+		<td></td>
+      		<td id="cpuCore">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td>CPU Load(%)</td>
+		<td></td>
+      		<td id="cpuLoad">min1: 3.77, min15: 3.46, min5: 3.61</td>
+	    </tr>
+    	    <tr>
+      		<td>Memory(%)</td>
+		<td></td>
+      		<td id="memory">36.4</td>
+	    </tr>
+	    <tr>
+      		<td>Disk Usage(%)</td>
+		<td></td>
+      		<td id="diskUsage">usage</td>
+	    </tr>
+    	    <tr>
+      		<td>OS</td>
+		<td></td>
+      		<td id="osVersion">Debian 9</td>
+	    </tr>
+    	    <tr>
+      		<td>IP Address</td>
+		<td></td>
+      		<td id="ipAddr">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td>Default G/W</td>
+		<td></td>
+      		<td id="defaultGw">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td>Public IP Address</td>
+		<td></td>
+      		<td id="pubIpAddr">unknown</td>
+	    </tr>
+          <tr>
+          <td>Web version</td>
+    <td></td>
+    <td id="webVer"></td>
+      </tr>
+    	    <tr>
+      		<td>test</td>
+		<td></td>
+		<td id="jsonVal"></td>
+	    </tr>
+
+    	    <tr>
+      		<td></td>
+		<td></td>
+		<td >
+		
+        		<p><button class="btn btn-primary" data-toggle="modal" data-target="#ModalPassword" onclick="fillPasswordModal();">password</button>
+		</td>
+	    </tr>
+
+
+	</table>
+	<br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Containers</h3>
+	<br>
+	<div id="dockerVer">Ver:Unknown</div>
+	<tr><td></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td></td></tr>
+	<table id="containers">
+	    <tr>
+      		<td id="controlModule">controlModule</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+     		<td id="conStatus">unknown</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+		<td id="conImage">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="conCpu"></td>
+	    </tr>
+    	    <tr>
+      		<td id="opcuaModule">opcuaModule</td>
+		<td></td>
+      		<td id="opcStatus">unknown</td>
+		<td></td>
+		<td id="opcImage">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td ></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="opcCpu"></td>
+	    </tr>
+    	    <tr>
+      		<td id="broker">broker</td>
+		<td></td>
+      		<td id="broStatus">unknown</td>
+		<td></td>
+		<td id="broImage">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="broCpu"></td>
+	    </tr>
+    	    <tr>
+      		<td id="tsDB">tsDB</td>
+		<td></td>
+      		<td id="tsStatus">unknown</td>
+		<td></td>
+		<td id="tsImage">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="tsCpu"></td>
+	    </tr>
+    	    <tr>
+      		<td id="monitor">monitor</td>
+		<td></td>
+      		<td id="monStatus">unknown</td>
+		<td></td>
+		<td id="monImage">unknown</td>
+	    </tr>
+    	    <tr>
+      		<td></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="monCpu"></td>
+	    </tr>
+	    <!--
+    	    <tr>
+      		<td id="fieldHub">EdgeHub</td>
+		<td></td>
+      		<td id="hubStatus">unknown</td>
+		<td></td>
+		<td id="hubImage">unknown</td>
+	    </tr>
+	    -->
+    	    <tr>
+      		<td></td>
+		<td></td>
+      		<td></td>
+		<td></td>
+		<td id="hubCpu"></td>
+	    </tr>
+	</table>
+	<br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Control</h3>
+	<br>
+	<table>
+	    <tr>
+      		<td>Application</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+     		<td id="ctrlRun">unknown</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Version</td>
+		<td></td>
+      		<td id="ctrlAppVer">control.</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>App Started</td>
+		<td></td>
+      		<td id="ctrlAppStarted"></td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Cloud Connection</td>
+		<td></td>
+      		<td id="cloudAmqpCon">disconnected</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Config</td>
+		<td></td>
+      		<td id="configFile" >ready</td>
+		<td></td>
+		<!--td><button class="btn btn-sm" onclick = "createPopupWin('/upload', 'Upload File', 400, 200);">upload</button></td-->
+	    </tr>
+    	    <tr>
+      		<td>Config Updated</td>
+		<td></td>
+      		<td id="configUpdated" >ready</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Cloud 등록</td>
+		<td></td>
+      		<td id="cloudRegi">false</td>
+		<td></td>
+		<td><button class="btn btn-sm" onclick="resetRegistration();">초기화</button></td>
+		<!--td><button class="btn btn-sm" onclick="registerGw();">등록</button></tdi-->
+		<!--td><button class="btn btn-sm" onclick = "createPopupWin('/registerHtml', 'Register PopUp', 400, 200);">등록test</button></td-->
+		<!--td><button class="btn btn-sm" data-toggle="modal" data-target="#ModalExample" onclick="fillRegiModal();">Registration</button></td-->
+	    </tr>
+    	    <tr>
+      		<td>Data Miss Cnt</td>
+		<td></td>
+      		<td id="dataMiss">0</td>
+		<td></td>
+		<td><button class="btn btn-sm" onclick="testUpdate();">Cnt Reset</button></td>
+	    </tr>
+    	    <tr>
+      		<td>Data rcv rate(mps)</td>
+		<td></td>
+      		<td id="mps"></td>
+		<td></td>
+		<!--td><button class="btn btn-sm" onclick="testUpdate();">test</button></tdi-->
+		<td></td>
+	    </tr>
+	</table>
+	<br>
+        <button class="btn btn-primary" onclick="restart('container','controlModule');">Restart</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#ModalExample" onclick="fillRegiModal();">등록</button>
+
+
+	<!-- Modal  -->
+	<div id="ModalExample" class="modal fade"></div>
+	<div id="ModalPassword" class="modal fade">
+   	</div><!-- /.modal -->
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+	      <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+	      <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+	      <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Aggregation Server</h3>
+	<br>
+	<table>
+	    <tr>
+      		<td>Application</td>
+		<td>&nbsp&nbsp</td>
+     		<td id="aggRun">unknown</td>
+		<td>&nbsp&nbsp</td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Version</td>
+		<td></td>
+      		<td id="aggAppVer">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>App Started</td>
+		<td></td>
+      		<td id="aggAppStarted">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>OPC UA connection</td>
+		<td></td>
+      		<td id="opcuaCon">false</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Server Ready</td>
+		<td></td>
+      		<td id="serverReady">false</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>Devices</td>
+		<td></td>
+      		<td id="devCnt">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>InfoModel file</td>
+		<td></td>
+      		<td id="infoModel">false</td>
+		<td></td>
+		<td></td>
+	    </tr>
+    	    <tr>
+      		<td>engineering file</td>
+		<td></td>
+      		<td id="engineering">false</td>
+		<td></td>
+		<!--td><button class="btn btn-sm" onclick = "createPopupWin('/upload', 'Upload File', 400, 200);">upload</button></td-->
+	    </tr>
+	    <tr>
+		<td>syscfg file</td>
+		<td></td>
+		<td id="syscfg">false</td>
+		<td></td>
+		<td></td>
+	    </tr>
+      <tr>
+    <td> X.509 Cert</td>
+    <td></td>
+    <td id="cert">false</td>
+    <td></td>
+    <td><button class="btn btn-sm" onclick = "createCert();">인증서</button></td>
+      </tr>
+	    <tr>
+		<td>Data Sending</td>
+		<td></td>
+		<td id="dataSending">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+	    <tr>
+		<td>Data Queue Full</td>
+		<td></td>
+		<td id="qFullCnt">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+	    <!--
+	    <tr>
+		<td>Report Timestamp</td>
+		<td></td>
+		<td id="reportTimestamp">unknown</td>
+		<td></td>
+		<td></td>
+	    </tr>
+	    -->
+	</table>
+	<br>
+	
+        <button class="btn btn-primary" onclick="restart('container','opcuaModule');">Restart</button>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">시계열 DB</h3>
+	<br>
+	<table>
+    	    <tr>
+      		<td>Version</td>
+		<td></td>
+      		<td id="tsDbVer"></td>
+	    </tr>
+	    <tr>
+      		<td>Last Insert</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+     		<td id="tsDbUpdated">2020-07-23 11:37:38</td>
+	    </tr>
+	    <tr>
+      		<td>Insert Failure Cnt</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+     		<td id="tsInsertFail">0</td>
+	    </tr>
+    	    <tr>
+      		<td>Table Count</td>
+		<td></td>
+      		<td id="tsDbCount">25437241</td>
+	    </tr>
+	</table>
+	<br>
+        <button class="btn btn-primary" onclick="window.open('http://'+window.location.hostname+':5001');">Data Analyzer</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Message Broker</h3>
+	<br>
+	<table>
+    	    <tr>
+      		<td>Version</td>
+		<td></td>
+      		<td id="brokerVer">unknown</td>
+	    </tr>
+	    <tr>
+      		<td>Status</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+     		<td id="brokerRun">unknown</td>
+	    </tr>
+	</table>
+	<br>
+        <button class="btn btn-primary" onclick="restart('container','broker');">Restart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- hr>
+ {{ who.name }}
+	{{ controlStatus }} -->
+
+</div>
+
+
+    <script> 
+        function createPopupWin(pageURL, pageTitle, 
+                    popupWinWidth, popupWinHeight) { 
+            var left = (screen.width - popupWinWidth) / 2 ; 
+            var top = (screen.height - popupWinHeight) / 4 ; 
+            var myWindow = window.open(pageURL, pageTitle,  
+                    'location=0, resizable=yes, width=' + popupWinWidth 
+                    + ', height=' + popupWinHeight + ', top=' 
+                    + top + ', left=' + left); 
+        } 
+    </script> 
+      
+      <hr>
+
+
+{% endblock%}
+
+
+{% block scripts %}
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+<script>
+$(document).ready(function(){
+    //connect to the socket server.
+    //var socket = io.connect('http://' + document.domain + ':' + location.port + '/test');
+    var socket = io.connect('http://' + document.domain + ':' + location.port + '/report');
+    var numbers_received = [];
+
+    //receive details from server
+    socket.on('newnumber', function(msg) {
+	console.log(msg);
+        console.log("Received number" + msg.number);
+	$('#jsonVal').html(msg.number);
+        //maintain a list of ten numbers
+        if (numbers_received.length >= 10){
+            numbers_received.shift()
+        }            
+        numbers_received.push(msg.number);
+        numbers_string = '';
+        for (var i = 0; i < numbers_received.length; i++){
+            numbers_string = numbers_string + '<p>' + numbers_received[i].toString() + '</p>';
+        }
+        //$('#log').html(numbers_string);
+    });
+
+
+    socket.on('regiProgressEvent',function(data){
+
+        console.log("RegiProgress  Received ++++++++++++++++++" + data);
+
+	            var js=JSON.stringify(data);
+		    var jsonD=JSON.parse(js);
+		    if(document.getElementById("regiReq")){
+
+			    if(jsonD["event"] == "AMQPServerConnect"){
+				    document.getElementById('regiReq').insertAdjacentHTML('afterend', '<br><label for="label1">&nbsp;&nbsp;&nbsp;&nbsp;'+jsonD["event"]+'</label>'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+jsonD["time"]); 
+			    }else if(jsonD["event"] == "fileDownload"){
+				    var blanks = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+				    if(jsonD["file"] == "nodeset.xml") blanks = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+				    else if(jsonD["file"] == "syscfg.json") blanks = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+			
+				    document.getElementById('downloading').insertAdjacentHTML('beforeend', '<br><label for="label1">'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET '+jsonD["file"]+'</label>'+blanks+jsonD["time"]+'<br>'); 
+			    }else if(jsonD["event"] == "aggServerReady"){
+				    document.getElementById('downloading').insertAdjacentHTML('afterend', '<br><label for="label1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '+jsonD["event"]+'</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;'+jsonD["time"]+'<br>'); 
+			    }else if(jsonD["event"] == "configFileUpdate"){
+				    document.getElementById('downloading').insertAdjacentHTML('afterend', '<br><label for="label1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '+jsonD["event"]+'</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+jsonD["time"]+'<br><br>'); 
+			    }
+
+		    }
+
+        });
+
+
+    socket.on('controlReport', function(data) {
+        console.log("Control Received ++++++++++++++++++" + data);
+
+      			var js=JSON.stringify(data);
+      			var jsonD=JSON.parse(js);
+      //console.log(jsonD);
+			document.getElementById("ctrlRun").innerHTML="running";
+			document.getElementById("brokerRun").innerHTML="running";
+
+			for (i = 0; i < jsonD["arg"].length; i++) {
+
+				if(jsonD["arg"][i].arg=="control"){
+					document.getElementById("gwName").innerHTML=jsonD["arg"][i].name;
+					document.getElementById("cloudAmqpCon").innerHTML=jsonD["arg"][i].cloudAmqpCon;
+					document.getElementById("cloudRegi").innerHTML=jsonD["arg"][i].cloudRegi;
+					document.getElementById("dataMiss").innerHTML=jsonD["arg"][i].rcvDataMiss_Mqtt;
+      					document.getElementById("mps").innerHTML=jsonD["arg"][i].rcvDataRate;
+
+				}else if(jsonD["arg"][i].arg=="config"){
+					document.getElementById("configFile").innerHTML=jsonD["arg"][i].file;
+					document.getElementById("configUpdated").innerHTML=jsonD["arg"][i].updated;
+				}else if(jsonD["arg"][i].arg=="application"){
+					document.getElementById("ctrlAppVer").innerHTML=jsonD["arg"][i].version;
+					document.getElementById("ctrlAppStarted").innerHTML=jsonD["arg"][i].appUpTime;
+				}else if(jsonD["arg"][i].arg=="tsDB"){
+					document.getElementById("tsDbUpdated").innerHTML=jsonD["arg"][i].lastUpdated;
+					document.getElementById("tsDbCount").innerHTML=jsonD["arg"][i].count;
+					document.getElementById("tsInsertFail").innerHTML=jsonD["arg"][i].insertFailCnt;
+				}else if(jsonD["arg"][i].arg=="broker"){
+					document.getElementById("brokerVer").innerHTML=jsonD["arg"][i].version;
+				}else if(jsonD["arg"][i].arg=="docker"){
+					document.getElementById("dockerVer").innerHTML=jsonD["arg"][i].version;
+				}else if(jsonD["arg"][i].arg=="disk"){
+					var usedFloat = (parseFloat(jsonD["arg"][i].used)/1024/1024/1024).toFixed(1);
+					var totalFloat = (parseFloat(jsonD["arg"][i].total)/1024/1024/1024).toFixed(1);
+
+					//document.getElementById("diskUsage").innerHTML=(usedFloat + 'GB / ' + totalFloat + 'GB ('+jsonD["arg"][i].usage+'%)');
+					document.getElementById("diskUsage").innerHTML=(jsonD["arg"][i].usage+' ('+usedFloat + 'GB/' + totalFloat + 'GB)');
+				}
+
+			}
+    });
+
+
+    socket.on('sysMonReport', function(data) {
+
+        console.log("sysMonReport Received ++++++++++++++++++" + data.report);
+
+
+      	var js=JSON.stringify(data);
+      	var jsonD=JSON.parse(js);
+
+	console.log(jsonD["arg"][0])
+	
+	if(jsonD["arg"].length!=0){
+		document.getElementById("cpuLoad").innerHTML="5min:"+jsonD["arg"][0].data.min5+", 1min:"+jsonD["arg"][0].data.min1+", 15min:"+jsonD["arg"][0].data.min15;//load
+		document.getElementById("cpuCore").innerHTML=jsonD["arg"][0].data.cpucore;//load
+		document.getElementById("memory").innerHTML=jsonD["arg"][1].data.percent+"  ("+(jsonD["arg"][1].data.used/1000000000).toFixed(1)+"GB/"+(jsonD["arg"][1].data.total/1000000000).toFixed(1)+"GB)";//mem
+		document.getElementById("uptime").innerHTML=jsonD["arg"][2].data;//uptime
+		document.getElementById("osVersion").innerHTML=jsonD["arg"][3].data.linux_distro;//system
+      		document.getElementById("webVer").innerHTML=jsonD["arg"][3].data.gatewayWeb;//system
+		document.getElementById("ipAddr").innerHTML=jsonD["arg"][4].data.address;
+		document.getElementById("defaultGw").innerHTML=jsonD["arg"][4].data.gateway;
+		document.getElementById("pubIpAddr").innerHTML=jsonD["arg"][4].data.public_address;
+
+	}
+	
+
+
+
+    });
+
+    socket.on('aggregationReport', function(data) {
+
+      var js=JSON.stringify(data);
+      var jsonD=JSON.parse(js);
+
+      //console.log(jsonD);
+      //console.log(jsonD["arg"][0].numberOfDevice);
+      document.getElementById("serverReady").innerHTML=jsonD["arg"][0].serverReady;
+      document.getElementById("opcuaCon").innerHTML=jsonD["arg"][0].opcuaConnection;
+      document.getElementById("devCnt").innerHTML=jsonD["arg"][0].numberOfdevice;
+      document.getElementById("infoModel").innerHTML=jsonD["arg"][1].infoModel;
+      document.getElementById("engineering").innerHTML=jsonD["arg"][1].engineering;
+      document.getElementById("syscfg").innerHTML=jsonD["arg"][1].syscfg;
+      document.getElementById("cert").innerHTML=jsonD["arg"][1].cert;
+      document.getElementById("aggAppStarted").innerHTML=jsonD["arg"][2].up;
+
+      //document.getElementById("aggAppVer").innerHTML=jsonD["arg"][2].version;
+      document.getElementById("aggAppVer").innerHTML=jsonD["arg"][2].version.replace("Aggregation","Agg");
+      document.getElementById("dataSending").innerHTML=jsonD["arg"][0].dataSent;
+      document.getElementById("qFullCnt").innerHTML=jsonD["arg"][0].qFull;
+      document.getElementById("aggRun").innerHTML="running";
+      
+      //document.getElementById("reportTimestamp").innerHTML=jsonD["arg"][3].timestamp;
+      
+    });
+
+    socket.on('containerReport', function(data) {
+      console.log("containerReport Received ++++++++++++++++++" + data.report);
+
+
+      var js=JSON.stringify(data);
+      var jsonD=JSON.parse(js);
+
+//	   var containerTable="<tr><td></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td></td></tr>";
+
+
+      console.log(jsonD["arg"].length)
+
+      if (jsonD["arg"].length!=0){
+
+      console.log(jsonD["arg"][0])
+      console.log(jsonD["arg"][0].name)
+
+
+	   for(var i = 0; i < jsonD["arg"].length; i++) {
+
+/* 
+		    var aContainer="<tr><td>" +jsonD["arg"][i].name+"</td><td></td><td>"+jsonD["arg"][i].status+"</td><td></td><td>"+jsonD["arg"][i].image+
+			   "</td></tr><tr><td></td><td></td><td></td><td></td><td>CPU "+(jsonD["arg"][i].cpuLoad).toFixed(1)+" %</td></tr>";
+          console.log(aContainer);
+
+		      containerTable=containerTable.concat(aContainer);
+
+		      if (jsonD["arg"][i].name=="tsDB" ){
+			       document.getElementById("tsDbVer").innerHTML=jsonD["arg"][i].image.split("/")[1];
+		      }
+*/
+	console.log(jsonD["arg"][i].name)
+
+          if (jsonD["arg"][i].name=="controlModule" ){
+            document.getElementById("controlModule").innerHTML=jsonD["arg"][i].name;
+            document.getElementById("conStatus").innerHTML=jsonD["arg"][i].status;
+            document.getElementById("conImage").innerHTML=jsonD["arg"][i].image;
+            document.getElementById("conCpu").innerHTML="CPU "+jsonD["arg"][i].cpuLoad.toFixed(1) +" %" +" MEM "+jsonD["arg"][i].memoryLoad.toFixed(1)+" %";
+          }
+          if (jsonD["arg"][i].name=="opcuaModule" ){
+            document.getElementById("opcuaModule").innerHTML=jsonD["arg"][i].name;
+            document.getElementById("opcStatus").innerHTML=jsonD["arg"][i].status;
+            document.getElementById("opcImage").innerHTML=jsonD["arg"][i].image;
+            document.getElementById("opcCpu").innerHTML="CPU "+jsonD["arg"][i].cpuLoad.toFixed(1) +" %" +" MEM "+jsonD["arg"][i].memoryLoad.toFixed(1)+" %";
+
+          }
+          if (jsonD["arg"][i].name=="tsDB" ){
+            document.getElementById("tsDB").innerHTML=jsonD["arg"][i].name;
+            document.getElementById("tsStatus").innerHTML=jsonD["arg"][i].status;
+            document.getElementById("tsImage").innerHTML=jsonD["arg"][i].image;
+            document.getElementById("tsCpu").innerHTML="CPU "+jsonD["arg"][i].cpuLoad.toFixed(1) +" %" +" MEM "+jsonD["arg"][i].memoryLoad.toFixed(1)+" %";
+
+            document.getElementById("tsDbVer").innerHTML=jsonD["arg"][i].image.split("/")[1];
+
+          }
+          if (jsonD["arg"][i].name=="broker" ){
+            document.getElementById("broker").innerHTML=jsonD["arg"][i].name;
+            document.getElementById("broStatus").innerHTML=jsonD["arg"][i].status;
+            document.getElementById("broImage").innerHTML=jsonD["arg"][i].image;
+            document.getElementById("broCpu").innerHTML="CPU "+jsonD["arg"][i].cpuLoad.toFixed(1) +" %" +" MEM "+jsonD["arg"][i].memoryLoad.toFixed(1)+" %";
+          }
+          if (jsonD["arg"][i].name=="monitor" ){
+            document.getElementById("monitor").innerHTML=jsonD["arg"][i].name;
+            document.getElementById("monStatus").innerHTML=jsonD["arg"][i].status;
+            document.getElementById("monImage").innerHTML=jsonD["arg"][i].image;
+            document.getElementById("monCpu").innerHTML="CPU "+jsonD["arg"][i].cpuLoad.toFixed(1) +" %" +" MEM "+jsonD["arg"][i].memoryLoad.toFixed(1)+" %";
+ 
+          }
+
+	  }//if
+
+	     }
+
+//        console.log(containerTable);
+//	     document.getElementById("containers").innerHTML=containerTable;
+    });
+
+			      });
+function registerGw(){
+
+  fetch(`${window.origin}/gatewayRegi`, {
+    		method: "GET",
+    		credentials: "include",
+    		//body: JSON.stringify(entry),
+    		cache: "no-cache",
+    		headers: new Headers({
+      			"content-type": "application/json"
+    			})
+  		})
+      .then(function(response){
+    			if (response.status != 200) {
+      				console.log(`Looks like there was a problem. Status code: ${response.status}`);
+      			return;
+    			}
+    			response.json().then(function(data) {
+      				console.log(data);
+
+      			})
+
+      })
+
+}
+
+function fillPasswordModal(){
+
+
+      var htmlString='<div class="modal-dialog"><div class="modal-content">'+
+			'<div class="modal-header">'+
+		           '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
+              			'<span aria-hidden="true">&times;</span>'+
+            			'</button>'+
+			   '<h2 class="modal-title">Change Password</h2>'+
+			'</div>'+
+			'<div class="modal-body">'+
+
+	'<div class="container" id="changePw">'+
+	   '<br>'+
+	   '<form name="pwInfo" action="passwordChange" method="post">'+'<table>'+
+           '<tr><td width="150" height="40"><label for="input1">서비스</label></td>'+
+	   '<td><select name="services" id="services"><option value="none">선택</option>'+
+	   '<option value="admin">Web admin</option>' + //<option value="opcua">OPC UA</option>'+
+	   '</select></td></tr><td></td>'+
+	   '<tr><td width="150" height="40"><label for="input1">사용자 ID</label></td>'+
+	   '<td><input type="text" id="input1" placeholder="user id" name="userId" value="{{request.form.userId}}"></td></tr><td></td>'+
+	   '<tr><td width="150" height="40"><label for="input1">현재 비밀번호</label></td>'+
+	   '<td><input type="password" id="input1" placeholder="current password" name="currentPw" value="{{request.form.currentPw}}"></td></tr><td></td>'+
+	   '<tr><td width="150" height="40"><label for="input1">변경할 비밀번호</label></td>'+
+	   '<td><input type="password" id="input1" placeholder="new password" name="newPw" value="{{request.form.newPw}}"></td></tr><td></td>'+
+	   '<tr><td width="150" height="40"><label for="input1">변경할 비밀번호 확인</label>'+
+	   '<td><input type="password" id="input1" placeholder="new password" name="chkPw" value="{{request.form.chkPw}}"></td></tr><td></td>'+
+	   '</table><br>'+
+         	'</form>'+
+
+ 	'<p class="lead text-xs-center" id="changepassword"></p>'+
+       	'<button class="btn btn-primary"  data-target="#ModalPassword" onclick="changePw();">변경</button>'+
+	'</div>'+
+
+	'</div>'+
+	'</div></div>'+
+	'<style> #input1 { background-color: #ebebeb; border-top: none; border-left: none; border-right: none; border-bottom: 2px solid black; }'+
+	'#label1 { position: absolute; top: 1px; left: 1px; padding: .8em .5em; color: #999; cursor: text; }'+
+	'</style>'
+
+
+	document.getElementById("ModalPassword").innerHTML=htmlString;
+
+}
+
+function changePw(){
+
+	var services = document.getElementById("services");
+	var service = services.options[services.selectedIndex].value;
+	var userId = document.forms["pwInfo"]["userId"].value;
+	var currentPw = document.forms["pwInfo"]["currentPw"].value;
+	var newPw = document.forms["pwInfo"]["newPw"].value;
+	var chkPw = document.forms["pwInfo"]["chkPw"].value;
+								   
+	var message = "아래 사항을 확인 후 다시 시도해주세요.\n";
+	var isError = false;
+	if(newPw==chkPw)
+	{
+	}
+	else
+	{
+		message += "  - 변경할 비밀번호와 비밀번호 확인이 일치하지 않습니다.\n";
+		isError = true;
+	}
+
+	if(service=="none")
+	{
+		message += "  - 서비스 종류를 선택해주세요.\n";
+		isError = true;
+	}
+
+	if(isError) 
+	{
+       		alert(message);
+		document.pwInfo.userId.focus();
+		return;
+	}
+
+	var changeInfo = {
+	      	//service: document.forms[""][""].value,
+        	//regiServer: document.forms["regiInfo"]["regiServer"].value,
+	      	//username:document.forms[""][""].value,
+		//oldPassword:document.forms[""][""].value,
+		//newPassword:document.forms[""][""].value,
+		service:service,
+		username:userId,
+		oldPassword:currentPw,
+		newPassword:newPw,
+	};
+	fetch(`${window.origin}/changePassword`, {
+             method: "POST",
+	     credentials: "include",
+	     body: JSON.stringify(changeInfo),
+	     cache: "no-cache",
+	     headers: new Headers({
+	     "content-type": "application/json"
+	         })
+	})
+	.then(function(response) {
+            if (response.status != 200) {
+               console.log(`Looks like there was a problem. Status code: ${response.status}`);
+               return;
+	       }
+	       response.json().then(function(data) {
+     				console.log(data);
+				var js=JSON.stringify(data);
+				var jsonD=JSON.parse(js);
+			  	document.getElementById('changePw').innerHTML=jsonD["message"]; 
+		})
+         	})
+				
+
+}
+
+
+
+function fillRegiModal(){
+
+
+      var htmlString='<div class="modal-dialog"><div class="modal-content">'+
+			'<div class="modal-header">'+
+		           '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
+              			'<span aria-hidden="true">&times;</span>'+
+            			'</button>'+
+			   '<h2 class="modal-title">Cloud Registration</h2>'+
+			'</div>'+
+			'<div class="modal-body">'+
+
+	'<div class="container" id="regiReq">'+
+	   '<br>'+
+	     '<form name="regiInfo" action="registerSubmit" method="post">'+
+	     '<label for="input1">클라우드 서버 IP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="input1" placeholder="xxx.xxx.xxx.xxx" name="regiServer" value="{{request.form.regiServer }}"><br><br>'+
+	     '<label for="input1">엣지게이트웨이 ID &nbsp;&nbsp;&nbsp;</label><input type="text" id="input1" placeholder="Example_GW" name="regiId" value="{{request.form.regiId }}"><br><br>'+
+	     '<label for="input1">클라우드 등록 키 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="password" id="input1" placeholder="Password" name="password" value="{{request.form.password }}"><br><br>'+
+	     '<label for="input1">Single Credential &nbsp;&nbsp;&nbsp;</label><input type="checkbox" id="toggle1" name="singleId" value="single" {{'checked="checked"' if single else ""}} checked /><br><br>'+
+	     '<label for="input1">시계열 데이터베이스&nbsp;</label><select name="tsDbOpt" id="input1"><option value="disable" selected>사용안함</option><option value="machbase">machbase</option></select>'+
+	         '<br>'+
+         	'</form>'+
+
+ 	'<p class="lead text-xs-center" id="regimessage"></p>'+
+       	'<button class="btn btn-primary"  data-target="#ModalExample" onclick="registerGw_new(document.regiInfo.regiServer, document.regiInfo.regiId);">Register</button>'+
+	'</div>'+
+
+	'</div>'+
+        '<div id="downloading"></div>'+
+	'</div></div>'+
+	'<style> #input1 { background-color: #ebebeb; border-top: none; border-left: none; border-right: none; border-bottom: 2px solid black; }'+
+	'#label1 { position: absolute; top: 1px; left: 1px; padding: .8em .5em; color: #999; cursor: text; }'+
+	'</style>'
+
+
+	document.getElementById("ModalExample").innerHTML=htmlString;
+
+}
+
+function registerGw_new(ipaddr, gwname){
+
+	var ipformat = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+	var isValid = true;
+	var checkMsg = "아래 사항을 확인하신 후 다시 등록 버튼을 눌러주세요.\n";
+	if(ipaddr.value.match(ipformat))
+	{
+		document.regiInfo.regiServer.focus();
+	}
+	else
+	{
+		checkMsg += "  - 적합한 IP 주소를 입력해주세요. e.g.192.168.0.1\n";
+		document.regiInfo.regiServer.focus();
+		isValid = false;
+	}
+
+	var str_space = /\s/;               // 공백 체크
+        if(str_space.exec(gwname.value)) 
+	{
+	        checkMsg += "  - 게이트웨이 이름에 공백이 있다면 확인 후 제거해주세요.\n";
+		isValid = false;
+	}
+	
+	if(!isValid)
+	{
+		alert(checkMsg);
+		return;
+       	}
+
+	if(document.getElementById("cert").innerHTML="false")
+	{
+		alert("Agg서버 인증서 생성 후 등록 작업이 진행됩니다.");
+		createCert();
+	}
+
+    	var regiInfo = {
+        	regiServer: document.forms["regiInfo"]["regiServer"].value,
+        	regiId:document.forms["regiInfo"]["regiId"].value,
+		password:document.forms["regiInfo"]["password"].value,
+		singleId:document.forms["regiInfo"]["singleId"].checked,
+		tsDbOpt:document.forms["regiInfo"]["tsDbOpt"].value
+    	};
+
+	document.getElementById("regiReq").innerHTML='<label for="label1">Registration In Progress ..... Waiting</label>';
+
+	fetch(`${window.origin}/modalRegiSubmit`, {
+    		method: "POST",
+    		//credentials: "include",
+    		body: JSON.stringify(regiInfo),
+    		cache: "no-cache",
+    		headers: new Headers({
+        		"content-type": "application/json"
+      		})
+  	})
+      	.then(function(response){
+    			if (response.status != 200) {
+      				console.log(`Looks like there was a problem. Status code: ${response.status}`);
+      			return;
+    			}
+    			response.json().then(function(data) {
+      				console.log(data);
+				//document.getElementById("regiReq").innerHTML=data.result;
+			  	//document.getElementById('regiReq').insertAdjacentHTML('afterend', data.result+" "+data.time); 
+			  	document.getElementById('downloading').insertAdjacentHTML('afterend', data.result+" "+data.time); 
+				
+      			})
+
+      })
+
+}
+
+
+function restart(target,name){
+       var restartTarget = {
+        target: target,
+        name:name 
+    	};
+	fetch(`${window.origin}/restart`, {
+    method: "POST",
+    //credentials: "include",
+    body: JSON.stringify(restartTarget),
+    cache: "no-cache",
+    headers: new Headers({
+        "content-type": "application/json"
+      })
+  })
+  .then(function(response) {
+      if (response.status != 200) {
+          console.log(`Looks like there was a problem. Status code: ${response.status}`);
+        return;
+      }
+      response.json().then(function(data) {
+          console.log(data);
+      });
+  })
+  .catch(function(error) {
+      console.log("Fetch error: " + error);
+  });
+
+
+}
+
+function resetRegistration(){
+
+  if(confirm("모든 등록 정보 및 Aggregation Server 동작이 초기화됩니다.\n진행하시겠습니까?") == false) return;
+
+  document.getElementById("cert").innerHTML="false";
+
+  fetch(`${window.origin}/resetRegistration`, {
+             method: "GET",
+	     credentials: "include",
+	     //body: JSON.stringify(entry),
+	     cache: "no-cache",
+	     headers: new Headers({
+	     		"content-type": "application/json"
+	         })
+	})
+   .then(function(response) {
+            if (response.status != 200) {
+                console.log(`Looks like there was a problem. Status code: ${response.status}`);
+               return;
+            }
+																					            	})
+																						    }
+
+																						   function changePassword(){
+
+  var changeInfo = {
+      	//service: document.forms[""][""].value,
+      	//username:document.forms[""][""].value,
+	//oldPassword:document.forms[""][""].value,
+	//newPassword:document.forms[""][""].value,
+	service:"admin",
+	username:"",
+	oldPassword:"nestfield",
+	newPassword:"merong"
+    };
+  fetch(`${window.origin}/changePassword`, {
+             method: "POST",
+	     credentials: "include",
+	     body: JSON.stringify(changeInfo),
+	     cache: "no-cache",
+	     headers: new Headers({
+	     		"content-type": "application/json"
+	         })
+	})
+   .then(function(response) {
+            if (response.status != 200) {
+                console.log(`Looks like there was a problem. Status code: ${response.status}`);
+               return;
+            }
+																					            	})
+																						   }
+
+function testUpdate(){
+  
+  fetch(`${window.origin}/reportStatus`, {
+    		method: "GET",
+    		credentials: "include",
+    		//body: JSON.stringify(entry),
+    		cache: "no-cache",
+    		headers: new Headers({
+      			"content-type": "application/json"
+    			})
+  		})
+      .then(function(response) {
+    			if (response.status != 200) {
+      				console.log(`Looks like there was a problem. Status code: ${response.status}`);
+      			return;
+    			}
+    			response.json().then(function(data) {
+      				//console.log(data);
+      				//console.log(JSON.parse(JSON.stringify(data)));
+      				var js=JSON.stringify(data);
+      				var jsonD=JSON.parse(js);
+      				console.log(jsonD);
+      				console.log(jsonD.arg);
+      				console.log(jsonD["arg"][0]);
+      				console.log(jsonD["arg"][2].count);
+				document.getElementById("jsonVal").innerHTML=jsonD["arg"][2].count;
+				document.getElementById("gwName").innerHTML=jsonD["arg"][0].name;
+				document.getElementById("cloudAmqpCon").innerHTML=jsonD["arg"][0].cloudAmqpCon;
+				document.getElementById("cloudRegi").innerHTML=jsonD["arg"][0].cloudRegi;
+				document.getElementById("configFile").innerHTML=jsonD["arg"][1].file;
+				document.getElementById("configUpdated").innerHTML=jsonD["arg"][1].updated;
+				document.getElementById("tsDbUpdated").innerHTML=jsonD["arg"][2].lastUpdated;
+				document.getElementById("tsDbCount").innerHTML=jsonD["arg"][2].count;
+
+
+
+
+    			});
+  		})      
+  
+}
+
+function createCert(){
+  fetch(`${window.origin}/createCert`, {
+        method: "GET",
+        credentials: "include",
+        //body: JSON.stringify(entry),
+        cache: "no-cache",
+        headers: new Headers({
+            "content-type": "application/json"
+          })
+  })
+  .then(function(response) {
+          if (response.status != 200) {
+              console.log(`Looks like there was a problem. Status code: ${response.status}`);
+            return;
+          }
+          response.json().then(function(data) {
+              console.log( console.log(JSON.parse(JSON.stringify(data))));
+          })
+
+  })
+
+}
+
+function ValidateIPaddress(input)
+{
+	var ipformat = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+	if(input.value.match(ipformat))
+	{
+		document.regiInfo.regiServer.focus();
+		return true;
+	}
+	else
+	{
+		alert("적합한 IP 주소를 입력해주세요. e.g.192.168.0.1");
+		document.regiInfo.regiServer.focus();
+		return false;
+	}
+}
+
+</script>
+
+{{ super() }}
+{% endblock%}
+
+
+
+
+

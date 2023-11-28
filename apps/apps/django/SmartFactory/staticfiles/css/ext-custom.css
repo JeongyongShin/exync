@@ -1,0 +1,169 @@
+.x-viewport > .x-body {
+	width:100%;
+	height:100%;
+}
+
+.x-grid-header-ct{/* border: 0; */ background-color: transparent; border-top:2px solid white !important;}
+.x-column-header {/* border: 0; */ background: none;}
+/* .x-column-header-inner{padding: 10px 15px 15px 7px;} */
+.x-column-header-inner:before{/* border: none; */}
+/* .x-column-header-text{color: #222;white-space: normal;font-size: 18px; overflow: visible;} */
+        .x-column-header-over{
+            background: none;}
+            .x-column-header-trigger{
+                display: none;
+                background-color: white;
+            }
+
+.x-column-header-inner-empty{
+            background: none;
+        }
+
+/* .x-column-header {border-right: 1px solid #e4e4e4 !Important;} */
+
+.grid_custom .x-grid-cell-special {border : 0;}
+.grid_custom .x-grid-cell-inner {font-size:17px; color:#eee;  font-family:\'Malgun Gothic\'; white-space: normal;}
+.grid_custom .x-grid-cell-inner .ccb {float:left; width:auto; height:100%; }
+.grid_custom .x-grid-cell-inner .ccb .ccl {font-size:13px; color:#777777; font-family:\'Malgun Gothic\';}
+.grid_custom .x-grid-cell-inner .cell_type_state_img {float:right;}
+
+.grid_custom .x-grid-cell-inner .x-form-display-field {font-size:13px; color:#777777;  font-family:\'Malgun Gothic\'; }
+.grid_custom .x-grid-row-editor .x-form-display-field .ccb {float:left; width:auto; height:100%; }
+.grid_custom .x-grid-row-editor .x-form-display-field .ccb .ccl {font-size:13px; color:#777777; font-family:\'Malgun Gothic\';}
+.grid_custom .x-grid-row-editor .x-form-display-field .cell_type_state_img {float:right;}
+/*.x-grid-header-ct {border: 0 !Important; }*/
+.grid_custom .x-grid-item {background-color: transparent;}
+.grid_custom .x-grid-item.x-grid-item-over {background-color:#00bbff1e;}
+.grid_custom .x-grid-item.x-grid-item-selected {background-color:#00bbff;}
+.grid_custom .x-grid-empty {height: 70%; background-color: transparent; text-align: center;}
+
+.grid_custom .text-large .x-grid-cell-inner {font-size:16px;}
+
+.grid_custom .x-grid-row-editor .x-form-display-field {display:none;}
+
+.tree_custom .x-grid-item {background-color: transparent; color:white; border-color: #444 !important;}
+.tree_custom .x-grid-item .x-grid-item-focused {color:white; font-weight:bold;}
+.tree_custom .x-grid-empty {height: 70%; background-color: transparent; text-align: center;}
+
+.tree_custom .x-grid-cell-inner-treecolumn {padding:3px;}
+
+.button_custom.x-btn-default-toolbar-small {background-color: transparent;}
+.button_custom .x-btn-inner-default-toolbar-small {color: white;}
+.button_custom.x-btn-default-toolbar-small.toggle-button{background-color: #00bbff;}
+.button_custom.toggle-button .x-btn-inner-default-toolbar-small {font-weight: bold}
+
+.x-panel-body-default{
+    color:white;
+	/* border-width: 0px; */
+}
+
+.x-column-header-over {
+ background:none
+}
+
+/* .x-column-header-inner {
+	padding-left: 20px;
+} */
+
+.x-column-header-text-inner {
+	font-family: 'Malgun Gothic';
+	color:#eee;
+	font-size: 20px;
+}
+
+.x-column-header-trigger {
+	display: block !Important;
+	background-color: transparent !Important;
+	width: 40px !Important;
+	font: 13px/1 FontAwesome !Important;
+    border-left: 0px !Important;
+    color:#bbbbbb;
+}
+
+.x-column-header-trigger:before{
+	margin-top: -6px !Important;
+}
+
+.x-window-header-default {
+	background-color: #47484B;
+	border-color: #47484B;
+}
+
+.x-window-default {
+	border-color: #47484B !Important;
+	background: #0B0C0E;
+}
+.x-window-body-default {
+	background: #0B0C0E;
+}
+
+.x-window-header-default .x-tool-img {
+    background-color:transparent;
+}
+
+
+.log_combo .x-form-text-default {background-color: transparent;}
+.log_combo .x-form-trigger-wrap-default {border-color: white;}
+.log_combo .x-form-trigger-default {background-color: transparent; #color:white; font-size: 12px;}
+.log_combo .x-form-text-default {font-size:13px; color:white;  font-family:\'Malgun Gothic\'; /* padding: 0px 10px 4px; */ background-color: transparent;}
+
+.log_datefield .x-form-text-default {background-color: transparent;}
+.log_datefield .x-form-trigger-wrap-default {border-color: white;}
+.log_datefield .x-form-trigger-default {background-color: transparent; border-left: 1px solid #dddddd; font-size:12px; color:#888888}
+.log_datefield .x-form-text-default {font-size:13px; color:white;  font-family:\'Malgun Gothic\'; padding: 0px 10px 4px; background-color: transparent;}
+
+.log_button {border: 1px solid white; background-color: transparent; border-radius: 3px; color: white ;}
+.log_button .x-btn-inner-default-toolbar-small {color: white ; font-weight: bold}
+.log_button.x-btn-over .x-btn-inner-default-toolbar-small {color: #161719;}
+.log_button.x-btn-focus .x-btn-inner-default-toolbar-small {color: #161719;}
+
+
+.log_grid .x-grid-empty {font-size:13px; color:#888888;  font-family:\'Malgun Gothic\';}
+
+/* .log_pagebar .x-btn-plain-toolbar-small {border: 1px solid #dddddd !important; background-color: #f8ffe9 !important; } */
+/* .log_pagebar .x-btn-icon-el-plain-toolbar-small {color:#888888 !important;} */
+
+.log_pagebar {border-top-width: 1px !important; border-color: #8db33a; background-color: transparent}
+.log_pagebar .log_pagebar_child {background-color: transparent;}
+
+.log_pagebar .x-toolbar-separator-horizontal {border: 0px;}
+.log_pagebar .x-toolbar-text-default {font-size:13px; color:#555555;  font-family:\'Malgun Gothic\';}
+.log_pagebar .x-form-text-default {text-align: center; padding: 0px 10px 4px;}
+.log_pagebar .x-form-trigger-wrap-default {border-color: #8db33a;}
+
+/* .log_pagebar .x-btn-icon-el.x-tbar-loading {font-size: 12px; color: #8db33a !important;} */
+.log_pagebar #tbtext-1068 {color:#888888}
+
+
+.x-collapse-el {background-color: transparent;}
+
+.x-btn-default-toolbar-small {border-radius: 7px; border-color:#919191;}
+
+.x-form-item-label-default {color:white}
+
+.x-fieldset {background:transparent}
+.x-fieldset-header-default > .x-fieldset-header-text {color:white}
+
+.x-css-shadow {
+    box-shadow: 0 0 black !important;
+}
+
+#topMenu {
+    overflow:hidden;
+}
+
+#topMenu-picker{
+    width:250px !important;
+    background: #212124 !important;
+    border-color: #515151;
+}
+
+
+#topMenu-picker .x-boundlist-item{
+    color: white;
+    font-weight:bold;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #515151;
+    border-top-width: 1px;
+}

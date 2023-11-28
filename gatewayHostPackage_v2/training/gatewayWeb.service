@@ -1,0 +1,10 @@
+[Unit]
+Description=gatewey Web interface
+ 
+[Service]
+User=admin
+ExecStart=/bin/bash /home/admin/projects/run.sh
+WorkingDirectory=/home/admin/projects/
+ 
+[Install]
+WantedBy=multi-user.target

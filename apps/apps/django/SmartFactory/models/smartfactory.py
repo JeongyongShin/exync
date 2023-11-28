@@ -35,7 +35,7 @@ class Common(models.Model):
 
 class LoginLog(models.Model):
     no = models.AutoField(db_column='NO', primary_key=True)  # Field name made lowercase.
-    userId = models.CharField(db_column='USER_ID', max_length=255)  # Field name made lowercase.
+    userId = models.CharField(db_column='USER_ID', max_length=191)  # Field name made lowercase.
     ip = models.CharField(db_column='IP', max_length=15)  # Field name made lowercase.
     state = models.IntegerField(db_column='STATE')  # Field name made lowercase.
 
@@ -47,7 +47,7 @@ class LoginLog(models.Model):
 class Aasx(models.Model):
     aasxNo = models.BigAutoField(db_column='AASX_NO', primary_key=True)  # Field name made lowercase.
     aasxNm = models.CharField(db_column='AASX_NM', max_length=100)  # Field name made lowercase.
-    userId = models.CharField(db_column='USER_ID', max_length=255)  # Field name made lowercase.
+    userId = models.CharField(db_column='USER_ID', max_length=191)  # Field name made lowercase.
     imgUrl = models.CharField(db_column='IMAGE_URL', max_length=100)  # Field name made lowercase.
     version = models.CharField(db_column='VERSION', max_length=10)  # Field name made lowercase.
     desc = models.CharField(db_column='DESC', max_length=500)  # Field name made lowercase.

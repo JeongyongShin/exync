@@ -2,8 +2,8 @@
 
 git clone https://github.com/alanxz/rabbitmq-c.git
 cd rabbitmq-c
-mkdir build
+sudo mkdir build
 cd build
-cmake ..
-make clean
-make install
+sudo cmake ..
+sudo make clean
+sudo make install

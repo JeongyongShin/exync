@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '03ur2c02urc9gjh9U&#B%w92893hf2en0@FC#R122rjo29203' # random string 50 character
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -140,15 +140,30 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 DATABASE_ROUTERS = ['config.dbRouter.dbRouter']
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ['MYSQL_DB'], #database name
+#         'USER': os.environ['MYSQL_USER'], # user name
+#         'PASSWORD': os.environ['MYSQL_PWD'], #password
+#         'HOST': 'localhost',
+#         'PORT': '3306'
+#     },
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ['MYSQL_DB'], #database name
-        'USER': os.environ['MYSQL_USER'], # user name
-        'PASSWORD': os.environ['MYSQL_PWD'], #password
-        'HOST': 'localhost',
-        'PORT': '3306'
-    },
+        'NAME': os.environ['MYSQL_DB'],
+        'USER': os.environ['MYSQL_USER'],
+        'PASSWORD': os.environ['MYSQL_PWD'],
+        'HOST': 'localhost',  # 또는 MariaDB 서버의 IP 주소
+        'PORT': '3306',  
+        'OPTIONS': {
+            'unix_socket': '/var/run/mysqld/mysqld.sock',  # MariaDB 소켓 파일 경로로 변경
+        },
+    }
 }
 
 
@@ -194,6 +209,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/resources/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+
+
 
 REST_FRAMEWORK = {
 

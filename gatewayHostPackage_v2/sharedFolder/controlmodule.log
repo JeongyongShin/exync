@@ -1,0 +1,443 @@
+2021-12-29 15:05:12 INFO     controlModule:load_gateway_config; gateway=company-gw-name
+2021-12-29 15:05:12 INFO     MqttHandler:loop_forever OK; on topic:DATA
+2021-12-29 15:05:12 INFO     MqttHandler:loop_forever OK
+2021-12-29 15:05:13 INFO     MqttHandler:on_connect_ext OK
+2021-12-29 15:05:13 INFO     MqttHandler:subscribing topic:DATA
+2021-12-29 15:05:13 INFO     MqttHandler:on_subscribe: 1 (0,)
+2021-12-29 15:05:13 INFO     MqttHandler:on_connect OK
+2021-12-29 15:05:13 INFO     MqttHandler:subscribing topic:COMMAND
+2021-12-29 15:05:13 INFO     MqttHandler:subscribing topic:EVENT
+2021-12-29 15:05:13 INFO     MqttHandler:on_subscribe: 1 (0,)
+2021-12-29 15:05:13 INFO     MqttHandler:on_subscribe: 2 (0,)
+2021-12-29 15:05:22 ERROR    AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '123.100.200.123'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('123.100.200.123', 5672))",)
+2021-12-29 15:05:22 ERROR    AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '123.100.200.123'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('123.100.200.123', 5672))",); first exception - None.
+2021-12-29 15:05:22 ERROR    AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '123.100.200.123'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('123.100.200.123', 5672))",); first exception - None
+2021-12-29 15:05:22 ERROR    Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '123.100.200.123'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('123.100.200.123', 5672))",); first exception - None
+2021-12-29 15:05:22 ERROR    Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2021-12-29 15:05:22 INFO     controlModule: exception :Failed during init_amqp_handler
+Exception ignored in: <bound method AmqpHandler.__del__ of <AmqpHandler.AmqpHandler object at 0x7fbc9a8a8470>>
+Traceback (most recent call last):
+  File "/project/controlModule/AmqpHandler.py", line 42, in __del__
+    self.connection.close()
+AttributeError: 'AmqpHandler' object has no attribute 'connection'
+2021-12-29 15:05:22 INFO     controlModule:AMQP INIT ERROR...............
+2021-12-29 15:05:22 INFO     controlModule:Used: 14 GiB
+2021-12-29 15:05:22 ERROR    MachbaseHandler:get_data_count; Error
+2021-12-29 15:05:22 INFO     controlModule:Last Disk used val ....15624757248
+2021-12-29 15:05:22 INFO     controlModule:Last Disk mon val ....15624757248
+version= control.0.9.9-210126
+-------- READ gateway.config --------------
+company-gw-name
+123.100.200.123
+nestfield
+123.100.200.123
+amqpID1
+nestfield
+False
+False
+
+
+False
+---------------------------------------------
+--------------- lastDiskMon ----------
+=======================================================
+ControlModule Started, ver. control.0.9.9-210126
+=======================================================
+Traceback (most recent call last):
+  File "controlModule.py", line 905, in <module>
+    main()
+  File "controlModule.py", line 891, in main
+    keyin=input()
+EOFError: EOF when reading a line
+2021-12-29 15:05:24 INFO     MqttHandler:on_message topic=COMMAND
+2021-12-29 15:05:24 INFO     controlModule:mqttTopicHandlerOnCOMMAND; payload={"src": "admin", "cmd": "reportStatus", "arg": ["false"]}
+2021-12-29 15:05:24 INFO     controlModule:mqttTopicHandlerOnCOMMAND; Got command for report Status from admin, arg=false
+2021-12-29 15:05:32 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:05:32 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:05:32 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:05:32 INFO     controlModule:None
+2021-12-29 15:05:32 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:05:32 INFO     controlModule:current posting pack size :3000
+2021-12-29 15:05:32 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:05:32 INFO     controlModule:postingRate    :3000
+2021-12-29 15:05:32 INFO     controlModule:postingRateCfg~postingRate :3000
+2021-12-29 15:05:32 INFO     controlModule:data posting rate change to :0
+2021-12-29 15:05:32 INFO     controlModule:No data received ... 
+2021-12-29 15:05:32 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:05:32 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:05:32 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:05:32 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:05:43 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:05:43 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:05:43 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:05:43 INFO     controlModule:None
+2021-12-29 15:05:43 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:05:43 INFO     controlModule:current posting pack size :1
+2021-12-29 15:05:43 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:05:43 INFO     controlModule:postingRate    :0
+2021-12-29 15:05:43 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:05:43 INFO     controlModule:No data received ... 
+2021-12-29 15:05:43 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:05:43 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:05:43 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:05:43 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:05:54 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:05:54 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:05:54 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:05:54 INFO     controlModule:None
+2021-12-29 15:05:54 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:05:54 INFO     controlModule:current posting pack size :1
+2021-12-29 15:05:54 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:05:54 INFO     controlModule:postingRate    :0
+2021-12-29 15:05:54 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:05:54 INFO     controlModule:No data received ... 
+2021-12-29 15:05:54 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:05:54 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:05:54 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:05:54 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:06:05 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:06:05 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:06:05 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:06:05 INFO     controlModule:None
+2021-12-29 15:06:05 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:06:05 INFO     controlModule:current posting pack size :1
+2021-12-29 15:06:05 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:06:05 INFO     controlModule:postingRate    :0
+2021-12-29 15:06:05 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:06:05 INFO     controlModule:No data received ... 
+2021-12-29 15:06:05 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:06:05 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:06:05 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:06:05 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:06:17 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:06:17 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:06:17 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:06:17 INFO     controlModule:None
+2021-12-29 15:06:17 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:06:17 INFO     controlModule:current posting pack size :1
+2021-12-29 15:06:17 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:06:17 INFO     controlModule:postingRate    :0
+2021-12-29 15:06:17 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:06:17 INFO     controlModule:No data received ... 
+2021-12-29 15:06:17 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:06:17 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:06:17 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:06:17 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:06:22 INFO     controlModule:===== here checkDiskUsage()======
+2021-12-29 15:06:22 INFO     controlModule:Used: 14 GiB
+2021-12-29 15:06:22 INFO     controlModule:Last Disk mon val ....15630684160
+2021-12-29 15:06:22 INFO     controlModule:Last Disk incremental ....5926912
+2021-12-29 15:06:22 ERROR    MachbaseHandler:get_data_count; Error
+2021-12-29 15:06:28 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:06:28 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:06:28 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:06:28 INFO     controlModule:None
+2021-12-29 15:06:28 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:06:28 INFO     controlModule:current posting pack size :1
+2021-12-29 15:06:28 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:06:28 INFO     controlModule:postingRate    :0
+2021-12-29 15:06:28 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:06:28 INFO     controlModule:No data received ... 
+2021-12-29 15:06:28 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:06:28 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:06:28 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:06:28 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:06:39 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:06:39 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:06:39 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:06:39 INFO     controlModule:None
+2021-12-29 15:06:39 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:06:39 INFO     controlModule:current posting pack size :1
+2021-12-29 15:06:39 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:06:39 INFO     controlModule:postingRate    :0
+2021-12-29 15:06:39 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:06:39 INFO     controlModule:No data received ... 
+2021-12-29 15:06:39 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:06:39 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:06:39 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:06:39 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:06:50 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:06:50 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:06:50 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:06:50 INFO     controlModule:None
+2021-12-29 15:06:50 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:06:50 INFO     controlModule:current posting pack size :1
+2021-12-29 15:06:50 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:06:50 INFO     controlModule:postingRate    :0
+2021-12-29 15:06:50 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:06:50 INFO     controlModule:No data received ... 
+2021-12-29 15:06:50 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:06:50 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:06:50 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:06:50 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:02 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:02 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:02 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:02 INFO     controlModule:None
+2021-12-29 15:07:02 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:02 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:02 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:02 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:02 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:02 INFO     controlModule:No data received ... 
+2021-12-29 15:07:02 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:02 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:02 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:02 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:13 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:13 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:13 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:13 INFO     controlModule:None
+2021-12-29 15:07:13 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:13 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:13 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:13 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:13 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:13 INFO     controlModule:No data received ... 
+2021-12-29 15:07:13 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:13 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:13 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:13 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:22 INFO     controlModule:===== here checkDiskUsage()======
+2021-12-29 15:07:22 INFO     controlModule:Used: 14 GiB
+2021-12-29 15:07:22 INFO     controlModule:Last Disk mon val ....15630704640
+2021-12-29 15:07:22 INFO     controlModule:Last Disk incremental ....20480
+2021-12-29 15:07:22 ERROR    MachbaseHandler:get_data_count; Error
+2021-12-29 15:07:24 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:24 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:24 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:24 INFO     controlModule:None
+2021-12-29 15:07:24 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:24 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:24 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:24 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:24 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:24 INFO     controlModule:No data received ... 
+2021-12-29 15:07:24 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:24 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:24 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:24 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:35 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:35 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:35 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:35 INFO     controlModule:None
+2021-12-29 15:07:35 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:35 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:35 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:35 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:35 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:35 INFO     controlModule:No data received ... 
+2021-12-29 15:07:35 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:35 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:35 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:35 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:46 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:46 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:46 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:46 INFO     controlModule:None
+2021-12-29 15:07:46 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:46 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:46 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:46 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:46 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:46 INFO     controlModule:No data received ... 
+2021-12-29 15:07:46 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:46 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:46 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:46 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:07:58 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:07:58 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:07:58 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:07:58 INFO     controlModule:None
+2021-12-29 15:07:58 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:07:58 INFO     controlModule:current posting pack size :1
+2021-12-29 15:07:58 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:07:58 INFO     controlModule:postingRate    :0
+2021-12-29 15:07:58 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:07:58 INFO     controlModule:No data received ... 
+2021-12-29 15:07:58 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:07:58 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:07:58 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:07:58 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:08:09 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:08:09 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:08:09 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:08:09 INFO     controlModule:None
+2021-12-29 15:08:09 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:08:09 INFO     controlModule:current posting pack size :1
+2021-12-29 15:08:09 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:08:09 INFO     controlModule:postingRate    :0
+2021-12-29 15:08:09 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:08:09 INFO     controlModule:No data received ... 
+2021-12-29 15:08:09 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:08:09 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:08:09 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:08:09 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:08:20 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:08:20 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:08:20 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:08:20 INFO     controlModule:None
+2021-12-29 15:08:20 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:08:20 INFO     controlModule:current posting pack size :1
+2021-12-29 15:08:20 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:08:20 INFO     controlModule:postingRate    :0
+2021-12-29 15:08:20 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:08:20 INFO     controlModule:No data received ... 
+2021-12-29 15:08:20 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:08:20 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:08:20 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:08:20 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:08:22 INFO     controlModule:===== here checkDiskUsage()======
+2021-12-29 15:08:22 INFO     controlModule:Used: 14 GiB
+2021-12-29 15:08:22 INFO     controlModule:Last Disk mon val ....15630721024
+2021-12-29 15:08:22 INFO     controlModule:Last Disk incremental ....16384
+2021-12-29 15:08:23 ERROR    MachbaseHandler:get_data_count; Error
+2021-12-29 15:08:32 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:08:32 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:08:32 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:08:32 INFO     controlModule:None
+2021-12-29 15:08:32 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:08:32 INFO     controlModule:current posting pack size :1
+2021-12-29 15:08:32 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:08:32 INFO     controlModule:postingRate    :0
+2021-12-29 15:08:32 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:08:32 INFO     controlModule:No data received ... 
+2021-12-29 15:08:32 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:08:32 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:08:32 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:08:32 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:08:43 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:08:43 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:08:43 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:08:43 INFO     controlModule:None
+2021-12-29 15:08:43 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:08:43 INFO     controlModule:current posting pack size :1
+2021-12-29 15:08:43 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:08:43 INFO     controlModule:postingRate    :0
+2021-12-29 15:08:43 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:08:43 INFO     controlModule:No data received ... 
+2021-12-29 15:08:43 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:08:43 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:08:43 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:08:43 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:08:54 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:08:54 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:08:54 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:08:54 INFO     controlModule:None
+2021-12-29 15:08:54 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:08:54 INFO     controlModule:current posting pack size :1
+2021-12-29 15:08:54 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:08:54 INFO     controlModule:postingRate    :0
+2021-12-29 15:08:54 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:08:54 INFO     controlModule:No data received ... 
+2021-12-29 15:08:54 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:08:54 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:08:54 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:08:54 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:09:05 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:09:05 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:09:05 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:09:05 INFO     controlModule:None
+2021-12-29 15:09:05 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:09:05 INFO     controlModule:current posting pack size :1
+2021-12-29 15:09:05 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:09:05 INFO     controlModule:postingRate    :0
+2021-12-29 15:09:05 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:09:05 INFO     controlModule:No data received ... 
+2021-12-29 15:09:05 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:09:05 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:09:05 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:09:05 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:09:16 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:09:16 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:09:16 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:09:16 INFO     controlModule:None
+2021-12-29 15:09:16 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:09:16 INFO     controlModule:current posting pack size :1
+2021-12-29 15:09:16 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:09:16 INFO     controlModule:postingRate    :0
+2021-12-29 15:09:16 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:09:16 INFO     controlModule:No data received ... 
+2021-12-29 15:09:16 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:09:16 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:09:16 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:09:16 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:09:23 INFO     controlModule:===== here checkDiskUsage()======
+2021-12-29 15:09:23 INFO     controlModule:Used: 14 GiB
+2021-12-29 15:09:23 INFO     controlModule:Last Disk mon val ....15630737408
+2021-12-29 15:09:23 INFO     controlModule:Last Disk incremental ....16384
+2021-12-29 15:09:23 ERROR    MachbaseHandler:get_data_count; Error
+2021-12-29 15:09:28 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:09:28 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:09:28 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:09:28 INFO     controlModule:None
+2021-12-29 15:09:28 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:09:28 INFO     controlModule:current posting pack size :1
+2021-12-29 15:09:28 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:09:28 INFO     controlModule:postingRate    :0
+2021-12-29 15:09:28 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:09:28 INFO     controlModule:No data received ... 
+2021-12-29 15:09:28 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:09:28 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:09:28 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:09:28 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:09:39 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:09:39 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:09:39 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:09:39 INFO     controlModule:None
+2021-12-29 15:09:39 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:09:39 INFO     controlModule:current posting pack size :1
+2021-12-29 15:09:39 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:09:39 INFO     controlModule:postingRate    :0
+2021-12-29 15:09:39 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:09:39 INFO     controlModule:No data received ... 
+2021-12-29 15:09:39 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:09:39 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:09:39 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:09:39 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:09:50 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:09:50 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:09:50 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:09:50 INFO     controlModule:None
+2021-12-29 15:09:50 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:09:50 INFO     controlModule:current posting pack size :1
+2021-12-29 15:09:50 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:09:50 INFO     controlModule:postingRate    :0
+2021-12-29 15:09:50 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:09:50 INFO     controlModule:No data received ... 
+2021-12-29 15:09:50 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:09:50 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:09:50 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:09:50 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:10:01 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:10:01 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:10:01 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:10:01 INFO     controlModule:None
+2021-12-29 15:10:01 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:10:01 INFO     controlModule:current posting pack size :1
+2021-12-29 15:10:01 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:10:01 INFO     controlModule:postingRate    :0
+2021-12-29 15:10:01 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:10:01 INFO     controlModule:No data received ... 
+2021-12-29 15:10:01 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:10:01 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:10:01 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:10:01 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring
+2021-12-29 15:10:12 INFO     controlModule:monitorSys_LOOP; start loop task.................................................................
+2021-12-29 15:10:12 INFO     controlModule:monitorSys_LOOP; repeatReport=False
+2021-12-29 15:10:12 INFO     controlModule:monitorSys_LOOP; latest data in machhandler
+2021-12-29 15:10:12 INFO     controlModule:None
+2021-12-29 15:10:12 INFO     controlModule:data receive rate per sec  min :0, max :0
+2021-12-29 15:10:12 INFO     controlModule:current posting pack size :1
+2021-12-29 15:10:12 INFO     controlModule:postingRateCfg :0
+2021-12-29 15:10:12 INFO     controlModule:postingRate    :0
+2021-12-29 15:10:12 INFO     controlModule:postingRateCfg~postingRate :0
+2021-12-29 15:10:12 INFO     controlModule:No data received ... 
+2021-12-29 15:10:12 INFO     controlModule:Recent data tsDB Insert try(HTTP POST) rate per sec : 0
+2021-12-29 15:10:12 INFO     controlModule:monitorSys_LOOP; Will publish KeepAlive
+2021-12-29 15:10:12 INFO     MqttHandler:publish; KeepAlive:1
+2021-12-29 15:10:12 INFO     controlModule:monitorSys_LOOP; Will glance for monitoring

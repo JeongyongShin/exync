@@ -9,5 +9,5 @@ apt-get install -y tk-dev libgdbm-dev libc6-dev libbz2-dev zlib1g-dev
 apt-get install -y openssl libffi-dev python3-dev python3-setuptools wget libcurl4-openssl-dev
 apt-get install -y git libtool
 apt-get install -y apt-transport-https
-apt-ge	install -y snapd
+apt-get	install -y snapd
 snap install core; sudo snap refresh core

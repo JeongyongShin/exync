@@ -1,0 +1,108 @@
+No LSB modules are available.
+2021-12-29 15:05:24 INFO     gatewayWeb:print_HostOS; hostOs=Ubuntu 20.04.3 LTS
+2021-12-29 15:05:24 INFO     gatewayWeb:load_gateway_config; adminPW=nestfield
+2021-12-29 15:05:24 INFO     gatewayWeb:init_mqtt_handler; brocker=172.18.0.2:1883
+2021-12-29 15:05:24 INFO     MqttHandler:loop_forever OK
+2021-12-29 15:05:24 INFO     MqttHandler:publish; COMMAND:{"src": "admin", "cmd": "reportStatus", "arg": ["false"]}
+2021-12-29 15:05:25 INFO     MqttHandler:on_connect OK
+2021-12-29 15:05:25 INFO     MqttHandler:subscribing topic:REPORT
+2021-12-29 15:05:25 INFO     MqttHandler:subscribing topic:EVENT
+2021-12-29 15:05:25 INFO     MqttHandler:subscribing topic:KeepAlive
+2021-12-29 15:05:25 INFO     MqttHandler:subscribing topic:$SYS/broker/version
+2021-12-29 15:05:25 INFO     MqttHandler:on_subscribe: 2 (0,)
+2021-12-29 15:05:25 INFO     MqttHandler:on_subscribe: 3 (0,)
+2021-12-29 15:05:25 INFO     MqttHandler:on_subscribe: 4 (0,)
+2021-12-29 15:05:25 INFO     MqttHandler:on_subscribe: 5 (0,)
+2021-12-29 15:05:25 INFO     MqttHandler:on_message topic=$SYS/broker/version
+2021-12-29 15:05:25 INFO     gatewayWeb:mqttTopicHandlerOnSYSBrockerVer; payload=mosquitto version 1.6.12
+2021-12-29 15:05:25 INFO     gatewayWeb:mqttTopicHandlerOnSYSBrockerVer; mqttBrokerVer=mosquitto version 1.6.12
+2021-12-29 15:05:30 INFO     gatewayWeb:tsDB load (CPU, Mem %) 3.8275102222222226, 0.5, mem max use :8341557248.0
+2021-12-29 15:05:30 INFO     gatewayWeb:broker load (CPU, Mem %) 0.03834448979591837, 0.01, mem max use :8341557248.0
+2021-12-29 15:05:30 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:05:30 WARNING  WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+print_HostOS()
+-------- READ gateway.config --------------
+company-gw-name
+admin
+nestfield
+False
+False
+
+---------------------------------------------
+admin PW  nestfield
+init_mqtt_handler()
+init_docker_handler()
+init_FlaskAppWrapper_handler()
+=======================================================
+GatewayWeb Started, ver. gateway.0.9.8-200910
+=======================================================
+ * Serving Flask app "FlaskAppWrapper" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2021-12-29 15:05:30 INFO      * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-12-29 15:05:32 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:05:40 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:05:43 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:05:50 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:05:54 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:05:58 INFO     gatewayWeb:tsDB load (CPU, Mem %) 2.3309982291666667, 0.5, mem max use :8341557248.0
+2021-12-29 15:05:58 INFO     gatewayWeb:broker load (CPU, Mem %) 0.08178709677419355, 0.01, mem max use :8341557248.0
+2021-12-29 15:06:00 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:06:05 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:06:10 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:06:17 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:06:20 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:06:24 INFO     gatewayWeb:tsDB load (CPU, Mem %) 4.971156063829787, 0.5, mem max use :8341557248.0
+2021-12-29 15:06:24 INFO     gatewayWeb:broker load (CPU, Mem %) 0.03942835051546392, 0.01, mem max use :8341557248.0
+2021-12-29 15:06:28 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:06:30 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:06:39 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:06:40 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:06:50 INFO     gatewayWeb:tsDB load (CPU, Mem %) 2.9605710344827587, 0.5, mem max use :8341557248.0
+2021-12-29 15:06:50 INFO     gatewayWeb:broker load (CPU, Mem %) 0.04148901098901099, 0.01, mem max use :8341557248.0
+2021-12-29 15:06:50 INFO     gatewayWeb: monitorKeepAlive ................... :9
+2021-12-29 15:06:50 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:00 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:02 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:10 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:13 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:15 INFO     gatewayWeb:tsDB load (CPU, Mem %) 1.8807561458333333, 0.5, mem max use :8341557248.0
+2021-12-29 15:07:15 INFO     gatewayWeb:broker load (CPU, Mem %) 0.04675915789473684, 0.01, mem max use :8341557248.0
+2021-12-29 15:07:20 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:24 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:30 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:35 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:40 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:41 INFO     gatewayWeb:tsDB load (CPU, Mem %) 2.1309942708333334, 0.5, mem max use :8341557248.0
+2021-12-29 15:07:41 INFO     gatewayWeb:broker load (CPU, Mem %) 0.06655191489361702, 0.01, mem max use :8341557248.0
+2021-12-29 15:07:46 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:07:50 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:07:58 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:00 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:08:06 INFO     gatewayWeb:tsDB load (CPU, Mem %) 3.245992446808511, 0.5, mem max use :8341557248.0
+2021-12-29 15:08:06 INFO     gatewayWeb:broker load (CPU, Mem %) 0.037069032258064516, 0.01, mem max use :8341557248.0
+2021-12-29 15:08:09 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:10 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:08:20 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:20 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:08:30 INFO     gatewayWeb: monitorKeepAlive ................... :9
+2021-12-29 15:08:32 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:33 INFO     gatewayWeb:tsDB load (CPU, Mem %) 3.9267010752688174, 0.5, mem max use :8341557248.0
+2021-12-29 15:08:33 INFO     gatewayWeb:broker load (CPU, Mem %) 0.04033862068965517, 0.01, mem max use :8341557248.0
+2021-12-29 15:08:40 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:08:43 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:50 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:08:54 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:08:58 INFO     gatewayWeb:tsDB load (CPU, Mem %) 3.852144565217391, 0.5, mem max use :8341557248.0
+2021-12-29 15:08:58 INFO     gatewayWeb:broker load (CPU, Mem %) 0.04675351063829788, 0.01, mem max use :8341557248.0
+2021-12-29 15:09:00 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:09:05 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:09:10 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:09:16 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:09:20 INFO     gatewayWeb: monitorKeepAlive ................... :10
+2021-12-29 15:09:24 INFO     gatewayWeb:tsDB load (CPU, Mem %) 4.326629684210526, 0.5, mem max use :8341557248.0
+2021-12-29 15:09:24 INFO     gatewayWeb:broker load (CPU, Mem %) 0.03840851063829787, 0.01, mem max use :8341557248.0
+2021-12-29 15:09:28 INFO     MqttHandler:on_message topic=KeepAlive
+2021-12-29 15:09:30 INFO     gatewayWeb: monitorKeepAlive ................... :10

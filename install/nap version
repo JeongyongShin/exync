@@ -1,0 +1,19 @@
+[0;1;32m●[0m grafana-server.service - Grafana instance
+   Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Mon 2023-11-20 22:32:33 KST; 4min 54s ago
+     Docs: http://docs.grafana.org
+ Main PID: 4239 (grafana)
+    Tasks: 18 (limit: 4915)
+   CGroup: /system.slice/grafana-server.service
+           └─4239 /usr/share/grafana/bin/grafana server --config=/etc/grafana/grafana.ini --pidfile=/run/grafana/grafana-server.pid --packaging=deb cfg:default.paths.logs=/var/log/grafana cfg:default.paths.data=/var/lib/grafana cfg:default.paths.plugins=/var/lib/grafana/plugins cfg:default.paths.provisioning=/etc/grafana/provisioning
+
+11월 20 22:35:25 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:25.799256996+09:00 level=info msg= error="[auth.unauthorized] cannot authenticate request" remote_addr=192.168.0.17 traceID=
+11월 20 22:35:25 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:25.799378882+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=192.168.0.17 time_ms=0 duration=211.161µs size=102 referer= handler=/api/live/ws
+11월 20 22:35:26 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:26.552093363+09:00 level=info msg= error="[auth.unauthorized] cannot authenticate request" remote_addr=192.168.0.17 traceID=
+11월 20 22:35:26 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:26.552235412+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=192.168.0.17 time_ms=0 duration=234.176µs size=102 referer= handler=/api/live/ws
+11월 20 22:35:27 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:27.775145561+09:00 level=info msg= error="[auth.unauthorized] cannot authenticate request" remote_addr=192.168.0.17 traceID=
+11월 20 22:35:27 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:27.775289685+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=192.168.0.17 time_ms=0 duration=240.532µs size=102 referer= handler=/api/live/ws
+11월 20 22:35:28 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:28.645389876+09:00 level=info msg= error="[auth.unauthorized] cannot authenticate request" remote_addr=192.168.0.17 traceID=
+11월 20 22:35:28 jy-desktop grafana[4239]: logger=context userId=0 orgId=0 uname= t=2023-11-20T22:35:28.645530875+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=192.168.0.17 time_ms=0 duration=245.278µs size=102 referer= handler=/api/live/ws
+11월 20 22:35:32 jy-desktop grafana[4239]: logger=context userId=1 orgId=1 uname=admin t=2023-11-20T22:35:32.925339938+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=192.168.0.17 time_ms=30 duration=30.222304ms size=0 referer= handler=/api/live/ws
+11월 20 22:35:50 jy-desktop grafana[4239]: logger=context userId=1 orgId=1 uname=admin t=2023-11-20T22:35:50.50255179+09:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=192.168.0.17 time_ms=2 duration=2.390319ms size=0 referer= handler=/api/live/ws

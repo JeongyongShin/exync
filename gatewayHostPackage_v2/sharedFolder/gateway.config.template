@@ -1,0 +1,27 @@
+{
+	"gatewayName":"company-gw-name",
+	"gwnameShare":"",
+	"hostIP":"",
+	"siteFirewall":"",
+	"usbDriveInstalled":false,
+	"gwAdmin":{
+		"id":"admin",
+		"credential":"security/admin.secured"
+	},
+	"opcuaUser":{
+		"id":"nestfield",
+		"credential":"security/opcua.secured"
+	},
+	"cloudServer":{
+	"ip":"123.100.200.123",
+	"credential":"security/regiKey.secured"
+	},
+	"amqp":{
+		"ip":"123.100.200.123",
+		"id":"amqpID1",
+		"credential":"security/amqp.secured"
+	},
+	"serverRegiCompleted":false,
+	"aggServerReadySuccess":false,
+	"updated":""
+}

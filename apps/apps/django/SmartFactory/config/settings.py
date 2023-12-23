@@ -104,6 +104,7 @@ INSTALLED_APPS = [
     'account',
     'models',
     'revproxy',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +115,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 ROOT_URLCONF = 'config.urls'
 
@@ -208,7 +214,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'resources')
 ]
 
-STATIC_URL = '/resources/'
+STATIC_URL = '/staticfiles/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 

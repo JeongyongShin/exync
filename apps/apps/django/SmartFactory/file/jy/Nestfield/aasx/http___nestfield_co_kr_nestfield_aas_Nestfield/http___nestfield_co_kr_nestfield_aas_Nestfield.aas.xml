@@ -1,0 +1,3010 @@
+<?xml version="1.0"?>
+<aas:aasenv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IEC61360="http://www.admin-shell.io/IEC61360/2/0" xsi:schemaLocation="http://www.admin-shell.io/aas/2/0 AAS.xsd http://www.admin-shell.io/IEC61360/2/0 IEC61360.xsd" xmlns:aas="http://www.admin-shell.io/aas/2/0">
+  <aas:assetAdministrationShells>
+    <aas:assetAdministrationShell>
+      <aas:idShort>CloudDataSolution</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/ids/aas/CloudDataSolution</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">http://nestfield.co.kr/asset/CloudDataSolution</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/CloudSloution/1/1/15S7T484K554</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/EdgeGWSolution/1/1/346U4845FG12</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>Nestfield</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/ids/aas/Nestfield</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">http://nestfield.co.kr/asset/Nestfield</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Identification/1/1/83D1W94P5638</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Facilities/1/1/E5M123A87423</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>AssemblyLine_1</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/ids/aas/AssemblyLine_1</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">http://nestfield.co.kr/asset/AssemblyLine_1</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Components/1/0/794B1385FQ43</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+    <aas:assetAdministrationShell>
+      <aas:idShort>ProSix6A106F156S</aas:idShort>
+      <aas:identification idType="IRI">https://nestfield.co.kr/ids/aas/ProSix6A106F156S</aas:identification>
+      <aas:assetRef>
+        <aas:keys>
+          <aas:key type="Asset" local="true" idType="IRI">https://www.nestfield.co.kr/asset/ProSix6A106F156S</aas:key>
+        </aas:keys>
+      </aas:assetRef>
+      <aas:submodelRefs>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Nameplate/1/0/175PD45387E4845</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Identification/1/0/257C4484SD531</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/OperationalData/1/0/34S565TP1863</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/TechnicalData/1/0/432U156UR846</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+        <aas:submodelRef>
+          <aas:keys>
+            <aas:key type="Submodel" local="true" idType="IRI">aas.nest.io/ids/sm/Documentation/1/0/51T2465G8Y165</aas:key>
+          </aas:keys>
+        </aas:submodelRef>
+      </aas:submodelRefs>
+      <aas:conceptDictionaries />
+    </aas:assetAdministrationShell>
+  </aas:assetAdministrationShells>
+  <aas:assets>
+    <aas:asset>
+      <aas:idShort>CloudDataSolution</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/asset/CloudDataSolution</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>Nestfield</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/asset/Nestfield</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>AssemblyLine_1</aas:idShort>
+      <aas:identification idType="IRI">http://nestfield.co.kr/asset/AssemblyLine_1</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+    <aas:asset>
+      <aas:idShort>ProSix6A106F156S</aas:idShort>
+      <aas:identification idType="IRI">https://www.nestfield.co.kr/asset/ProSix6A106F156S</aas:identification>
+      <aas:kind>Instance</aas:kind>
+    </aas:asset>
+  </aas:assets>
+  <aas:submodels>
+    <aas:submodel>
+      <aas:idShort>CloudSolution</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/CloudSloution/1/1/15S7T484K554</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/EdgeGWSolution/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>BasicConfiguration</aas:idShort>
+            <aas:description>
+              <aas:langString lang="en">Internet address and Sampling interval time</aas:langString>
+              <aas:langString lang="kr">인터넷 주소 및 샘플링 주기 설정</aas:langString>
+            </aas:description>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="SubmodelElementCollection" local="false" idType="IRI">http://nestfield.co.kr/nestfield/CloudSolution/BasicConfiguration/1/0</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>NetworkConnection</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAK174#002</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>X.X.X.X</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>SamplingInterval</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAM764#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>100.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>EdgeGWSolution</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/EdgeGWSolution/1/1/346U4845FG12</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/EdgeGWSolution/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>Nestfield_GW</aas:idShort>
+            <aas:description>
+              <aas:langString lang="en">Nestfield Gateway</aas:langString>
+              <aas:langString lang="kr">네스트필드 게이트웨이</aas:langString>
+            </aas:description>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="SubmodelElementCollection" local="false" idType="IRI">http://nestfield.co.kr/nestfield/EdgeGWSolution/Nestfield_GW/1/0</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>BasicConfiguration</aas:idShort>
+                  <aas:description>
+                    <aas:langString lang="en">Internet address and Sampling interval time</aas:langString>
+                    <aas:langString lang="kr">인터넷 주소 및 샘플링 주기 설정</aas:langString>
+                  </aas:description>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="SubmodelElementCollection" local="false" idType="IRI">https://www.AASnest.io/ids/EdgeGWSolution/BasicConfiguration/1/0</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>NetworkConnection</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAK174#002</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>opc.tcp://X.X.X.X:4840</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>SamplingInterval</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAM764#003</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>100.0</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>ProSix6A106F156S</aas:idShort>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="SubmodelElementCollection" local="false" idType="IRI">https://www.AASnest.io/ids/EdgeGWSolution/EosonC4Robot_1/1/0</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:submodelElementCollection>
+                        <aas:idShort>BasicConfiguration</aas:idShort>
+                        <aas:description>
+                          <aas:langString lang="en">Internet address and Sampling interval time</aas:langString>
+                          <aas:langString lang="kr">인터넷 주소 및 샘플링 주기 설정</aas:langString>
+                        </aas:description>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="SubmodelElementCollection" local="false" idType="IRI">https://www.AASnest.io/ids/EdgeGWSolution/BasicConfiguration/1/0</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:value>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>NetworkConnection</aas:idShort>
+                              <aas:category>PARAMETER</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAK174#002</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>string</aas:valueType>
+                              <aas:value>opc.tcp://X.X.X.X:[PORT]</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>SamplingInterval</aas:idShort>
+                              <aas:category>PARAMETER</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAM764#003</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>100.0</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                        </aas:value>
+                        <aas:ordered>false</aas:ordered>
+                        <aas:allowDuplicates>false</aas:allowDuplicates>
+                      </aas:submodelElementCollection>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Facilities</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Facilities/1/1/E5M123A87423</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Facilities/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>AssemblyLine_1</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">aas.nest.io/ids/cd/HasElementOf/1/0/</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="AssetAdministrationShell" local="true" idType="IRI">http://nestfield.co.kr/ids/aas/AssemblyLine_1</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Components</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Components/1/0/794B1385FQ43</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Components/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:referenceElement>
+            <aas:idShort>ProSix6A106F156S</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/HasElementOf</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:keys>
+                <aas:key type="AssetAdministrationShell" local="true" idType="IRI">https://nestfield.co.kr/ids/aas/EpsonProSixC4_A601S</aas:key>
+              </aas:keys>
+            </aas:value>
+          </aas:referenceElement>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Nameplate</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Nameplate/1/0/175PD45387E4845</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Nameplate/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>ManufacturerName</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO677#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>Nestfield</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>SerialNumber</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO236#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>C481U1538079</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>ManufacturerProductDesignation</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAW338#001</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>6-Axis Robot Arm</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>YearOfConstruction</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAP906#001</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>2019</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Identification</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Identification/1/0/257C4484SD531</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Identification/Submodel/1/1/ProSix6</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>ManufacturerName</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO677#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>Nestfield</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>DateOfManufacture</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAR972#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>date</aas:valueType>
+            <aas:value>2019-06-01</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>SupplierName</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO735#003</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>Nestfield</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>SerialNumber</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO236#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>C481U1538079</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:file>
+            <aas:idShort>ProductThumbnail</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/Thumbnail</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:mimeType>image/png</aas:mimeType>
+            <aas:value>/aasx/image/ProSix6A106F156S.PNG</aas:value>
+          </aas:file>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>OperationalData</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/OperationalData/1/0/34S565TP1863</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/OperationalData/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>CurrentPointName</aas:idShort>
+            <aas:category>VARIABLE</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/PointName</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>HOME</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>CurrentPosition</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/CurrentPosition</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>World</aas:idShort>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/WorldCoordinates</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_X</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>0.160</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_Y</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>346.848</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_Z</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>510.079</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_U</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>90.189</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_V</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>-0.223</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Position_W</aas:idShort>
+                        <aas:category>VARIABLE</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>float</aas:valueType>
+                        <aas:value>-179.454</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>TargetPosition</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/TargetPosition</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>HOME</aas:idShort>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/TargetPosition</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:submodelElementCollection>
+                        <aas:idShort>World</aas:idShort>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/WorldCoordinates</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:value>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_X</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>0.160</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Y</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>346.848</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Z</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>510.079</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_U</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>90.189</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_V</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>-0.223</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_W</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>-179.454</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                        </aas:value>
+                        <aas:ordered>false</aas:ordered>
+                        <aas:allowDuplicates>false</aas:allowDuplicates>
+                      </aas:submodelElementCollection>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>Point1</aas:idShort>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/TargetPosition</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:submodelElementCollection>
+                        <aas:idShort>World</aas:idShort>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/WorldCoordinates</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:value>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_X</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>49.640</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Y</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>443.552</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Z</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>179.995</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_U</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>90.250</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_V</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>0.167</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_W</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>-179.749</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                        </aas:value>
+                        <aas:ordered>false</aas:ordered>
+                        <aas:allowDuplicates>false</aas:allowDuplicates>
+                      </aas:submodelElementCollection>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>Point2</aas:idShort>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/TargetPosition</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:submodelElementCollection>
+                        <aas:idShort>World</aas:idShort>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/WorldCoordinates</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:value>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_X</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>-53.873</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Y</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>443.551</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_Z</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>179.868</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_U</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>90.189</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_V</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>0.167</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                          <aas:submodelElement>
+                            <aas:property>
+                              <aas:idShort>Position_W</aas:idShort>
+                              <aas:category>VARIABLE</aas:category>
+                              <aas:semanticId>
+                                <aas:keys>
+                                  <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:key>
+                                </aas:keys>
+                              </aas:semanticId>
+                              <aas:kind>Instance</aas:kind>
+                              <aas:qualifier />
+                              <aas:valueType>float</aas:valueType>
+                              <aas:value>-179.496</aas:value>
+                            </aas:property>
+                          </aas:submodelElement>
+                        </aas:value>
+                        <aas:ordered>false</aas:ordered>
+                        <aas:allowDuplicates>false</aas:allowDuplicates>
+                      </aas:submodelElementCollection>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>RobotStatus</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/RobotStatusCollection</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>EmergencyStop</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-BAG100#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Safeguard</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-BAG100#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motors</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-BAG100#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Power</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-BAG100#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>TechnicalData</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/TechnicalData/1/0/432U156UR846</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/TechnicalData/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>MotorPowerConsumption</aas:idShort>
+            <aas:category />
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorPowerConsumptionCollection</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor1</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>500.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor2</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>400.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor3</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>200.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor4</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>150.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor5</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>150.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor6</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAC969#007</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>150.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>MotorOperatingSpeed</aas:idShort>
+            <aas:category />
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeedCollection</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_1</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>480.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_2</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>460.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_3</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>528.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_4</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>537.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_5</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>546.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Motor_6</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>693.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>Payload</aas:idShort>
+            <aas:category />
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/PayloadCollection</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Rated</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAH018#002</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>2.5</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Max</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAH018#002</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>float</aas:valueType>
+                  <aas:value>6.0</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>Repeatability</aas:idShort>
+            <aas:category>CONSTANT</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAZ285#001</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>float</aas:valueType>
+            <aas:value>20.0</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>Weight</aas:idShort>
+            <aas:category>CONSTANT</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAV691#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>float</aas:valueType>
+            <aas:value>31.0</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>NoiseLevel</aas:idShort>
+            <aas:category>CONSTANT</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAF410#003</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>int</aas:valueType>
+            <aas:value>76</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Documentation</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Documentation/1/0/51T2465G8Y165</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Documentation/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>Document001</aas:idShort>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/DocumentDataCollection</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Language</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ACB113#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>en</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>DocumentType</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ACB113#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>pdf</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>DocumentSize</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ACB113#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>349 KB</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:file>
+                  <aas:idShort>Attachment</aas:idShort>
+                  <aas:category>CONSTANT</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ACB016#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:mimeType>application/pdf</aas:mimeType>
+                  <aas:value>/aasx/document/IEEE-2030-5-Conformance-Report-Nestfield_UNEST2000.pdf</aas:value>
+                </aas:file>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+    <aas:submodel>
+      <aas:idShort>Identification</aas:idShort>
+      <aas:identification idType="IRI">aas.nest.io/ids/sm/Identification/1/1/83D1W94P5638</aas:identification>
+      <aas:kind>Instance</aas:kind>
+      <aas:semanticId>
+        <aas:keys>
+          <aas:key type="Submodel" local="false" idType="IRI">https://admin-shell.io/ids/Identification/Submodel/1/1</aas:key>
+        </aas:keys>
+      </aas:semanticId>
+      <aas:qualifier />
+      <aas:submodelElements>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>ManufacturerName</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO677#002</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>Nestfield</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>SupplierName</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO735#003</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>Nestfield</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:submodelElementCollection>
+            <aas:idShort>ContactInfo</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/ContactInfo</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:value>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Name</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO735#003</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>Nestfield</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:submodelElementCollection>
+                  <aas:idShort>PhysicalAddress</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/PhysicalAddress</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:value>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>CountryCode</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO730#001</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>KR</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>Street</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO128#002</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>Haean-ro</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>PostalCode</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ADA014#001</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>15588 (Zip)</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>City</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/City</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>Ansan-si</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                    <aas:submodelElement>
+                      <aas:property>
+                        <aas:idShort>StateCounty</aas:idShort>
+                        <aas:category>PARAMETER</aas:category>
+                        <aas:semanticId>
+                          <aas:keys>
+                            <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/StateCounty</aas:key>
+                          </aas:keys>
+                        </aas:semanticId>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:qualifier />
+                        <aas:valueType>string</aas:valueType>
+                        <aas:value>Sangnok-gu, Gyeonggi-do</aas:value>
+                      </aas:property>
+                    </aas:submodelElement>
+                  </aas:value>
+                  <aas:ordered>false</aas:ordered>
+                  <aas:allowDuplicates>false</aas:allowDuplicates>
+                </aas:submodelElementCollection>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Email</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/Email</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>sales@nestfield.co.kr</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>URL</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO694#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>http://www.nestfield.co.kr/</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Phone</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ADA009#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>+82-031-400-XXXX</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+              <aas:submodelElement>
+                <aas:property>
+                  <aas:idShort>Fax</aas:idShort>
+                  <aas:category>PARAMETER</aas:category>
+                  <aas:semanticId>
+                    <aas:keys>
+                      <aas:key type="ConceptDescription" local="true" idType="IRDI">0112/2///61360_4#ADA011#001</aas:key>
+                    </aas:keys>
+                  </aas:semanticId>
+                  <aas:kind>Instance</aas:kind>
+                  <aas:qualifier />
+                  <aas:valueType>string</aas:valueType>
+                  <aas:value>+82-031-400-XXXX</aas:value>
+                </aas:property>
+              </aas:submodelElement>
+            </aas:value>
+            <aas:ordered>false</aas:ordered>
+            <aas:allowDuplicates>false</aas:allowDuplicates>
+          </aas:submodelElementCollection>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:file>
+            <aas:idShort>CompanyLogo</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRI">https://admin-shell.io/ids/1/0/CompanyLogo</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:mimeType>image/png</aas:mimeType>
+            <aas:value>/aasx/image/logo/Nestfield_logo.png</aas:value>
+          </aas:file>
+        </aas:submodelElement>
+        <aas:submodelElement>
+          <aas:property>
+            <aas:idShort>URL</aas:idShort>
+            <aas:category>PARAMETER</aas:category>
+            <aas:semanticId>
+              <aas:keys>
+                <aas:key type="ConceptDescription" local="true" idType="IRDI">0173-1#02-AAO694#001</aas:key>
+              </aas:keys>
+            </aas:semanticId>
+            <aas:kind>Instance</aas:kind>
+            <aas:qualifier />
+            <aas:valueType>string</aas:valueType>
+            <aas:value>http://www.nestfield.co.kr/</aas:value>
+          </aas:property>
+        </aas:submodelElement>
+      </aas:submodelElements>
+    </aas:submodel>
+  </aas:submodels>
+  <aas:conceptDescriptions>
+    <aas:conceptDescription>
+      <aas:idShort>NetworkConnection</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAK174#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Network Connection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">describes the connection to the networtk</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>SamplingInterval</aas:idShort>
+      <aas:category />
+      <aas:identification idType="IRDI">0173-1#02-AAM764#003</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">sampling interval</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>ms</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">if is the time interval in which the processor calculates (charges) for a new issue value</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>InternetAddress</aas:idShort>
+      <aas:category />
+      <aas:identification idType="IRDI">0173-1#02-AAO694#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Internet address</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:symbol />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition />
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+      <aas:isCaseOf>
+        <aas:keys />
+      </aas:isCaseOf>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>PowerConsumption</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAC969#007</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">power consumption</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>W</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">power requirement of the device or component during defined operating conditions</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Repeatability</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAZ285#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Repeatability</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>µm</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">accuracy with which a motion system achieves a target position over several attempts under identical conditions</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>NoiseLevel</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAF410#003</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Noise level</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">NOISE_VAC</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit>dB</IEC61360:unit>
+            <IEC61360:dataType>INTEGER_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">tenfold decade logarithm of the ratio of the acoustic power emitted of the analyzed source to the basic acoustic power, whereas the frequency evaluation is declared determined using a standard procedure, value referred to re 1 pW. (2010/30/EU)</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Payload</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAH018#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">payload</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>kg</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">impact of the force onto the object</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Weight</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAV691#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Weight</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>kg</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Mass of weight without packaging and transport unit</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Gateway</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#01-AGF065#003</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="EN">Gateway</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="EN">Gateway</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="EN">communication interface connects computer networks, which may be based on completely different network protocols</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>BasicConfiguration</aas:idShort>
+      <aas:description>
+        <aas:langString lang="EN">properties of the means provided to influence the basic settings of a device</aas:langString>
+      </aas:description>
+      <aas:identification idType="IRDI">0173-1#02-AAQ604#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="EN">BasicConfiguration</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="EN">BasicConfiguration</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="EN">properties of the means provided to influence the basic settings of a device</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Communication_Interface</aas:idShort>
+      <aas:category>CONSTANT</aas:category>
+      <aas:identification idType="IRDI">0173-1#02-AAU906#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="EN">Communication_Interface</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="EN?">Communication_Interface</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition />
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>ManufacturerName</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAO677#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="de">Herstellername</IEC61360:langString>
+              <IEC61360:langString lang="en">ManufacturerName</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">ManufacturerName</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="de">Bezeichnung für eine natürliche oder juristische Person, die für die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist</IEC61360:langString>
+              <IEC61360:langString lang="en">legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>StatusType</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-BAG100#003</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Status type</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING_TRANSLATABLE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">A group of possible states for a process, of a device or an installation equipped with comparable attributes</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>SerialNumber</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAO236#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">serial number</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">unique combination of numbers and letters used to identify the device once it has been manufactured</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Name_of_Supplier</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAO735#003</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">name of supplier</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">name of supplier which provides the customer with a product or a service</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>ManufacturerProductDesignation</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAW338#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Manufacturer product designation</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING_TRANSLATABLE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Short description of the product (short text)</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>YearOfConstruction</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAP906#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Year of construction</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Year as completion date of object</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>TelephoneNumber</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ADA009#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>03</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">telephone number</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">phone no</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">identification number of a telephone in a domain at which telephone calls can be received</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>FacsimileNumber</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ADA011#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>03</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">facsimile number</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">fax no</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">identification number of a facsimile system in a domain at which facsimiles can be received</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Street</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAO128#002</aas:identification>
+      <aas:administration>
+        <aas:version>2</aas:version>
+        <aas:revision>1</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName />
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING_TRANSLATABLE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">street name and house number</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>PostalCode</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ADA014#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>03</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">postal code</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">postal code</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">identification number of a geographical area within a domain, e.g. a country, by a local postal service for sorting mail</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>RobotCoordinate</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/RobotCoordinate</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Robot coordinate</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇 좌표</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>mm</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">In the native coordinate system of the robot, axis(X or Y or Z) value. </IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇의 기본 좌표계에서 축(X, Y, Z) 값</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>RobotRotationCoordinate</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/RobotRotationCoordinate</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Robot coordinate (rotation)</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇 좌표 (회전)</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>°</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">In the native coordinate system of the robot, rotation axis(Rotate around X or Y or Z axis) value. </IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇의 기본 좌표계에서 회전축(X, Y 또는 Z 축을 중심으로 회전) 값</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>CompanyLogo</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/CompanyLogo</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Company logo</IEC61360:langString>
+              <IEC61360:langString lang="kr">회사로고</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING_TRANSLATABLE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Graphical representation of company name, trademark, abbreviation, etc.</IEC61360:langString>
+              <IEC61360:langString lang="kr">회사명, 상표, 약어 등의 그래픽 표현</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Thumbnail</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/Thumbnail</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Thumbnail</IEC61360:langString>
+              <IEC61360:langString lang="kr">섬네일</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Small image made to help people understand</IEC61360:langString>
+              <IEC61360:langString lang="kr">사람들이 이해할 수 있도록 만들어진 작은 이미지</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>PointName</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/PointName</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">point name</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Name indicating the target point where the robot moves</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇이 움직이는 목표 지점을 가리키는 명칭</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>MotorOperatingSpeed</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeed</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Motor operating speed</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit>deg/s</IEC61360:unit>
+            <IEC61360:dataType>REAL_MEASURE</IEC61360:dataType>
+            <IEC61360:definition />
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>ContactInfo</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/ContactInfo</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Contact information</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">ContactInfo</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Collection for general contact data</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Email</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/Email</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Email address</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Email address</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>PhysicalAddress</aas:idShort>
+      <aas:category />
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/PhysicalAddress</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Physical address</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Physical address</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>City</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/City</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">City</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">a large town</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>StateCounty</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/StateCounty</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">State and County</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">State and County</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>CurrentPosition</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/CurrentPosition</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Current position</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">A collection of terms related to the position of the robot</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇의 위치와 관련된 용어의 모음</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>TargetPosition</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/TargetPosition</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Target position</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Target point where the robot moves</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇이 움직이는 타겟 지점</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>RobotStatusCollection</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/RobotStatusCollection</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Robot status collection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Collection of robot status</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇 스테이터스 모음</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>WorldCoordinates</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/WorldCoordinates</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">World coordinates</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">General representation of the robot coordinate system</IEC61360:langString>
+              <IEC61360:langString lang="kr">로봇 좌표계의 일반적인 표현</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>HasElementOf</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/HasElementOf</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">HasElementOf</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName>
+              <IEC61360:langString lang="en">HasElementOf</IEC61360:langString>
+            </IEC61360:shortName>
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">A reference of actual instance of element.</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>MotorPowerConsumptionCollection</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/MotorPowerConsumptionCollection</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Motor power consumption collection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">MotorPowerConsumptionCollection means collection or collection of data related to motor power consumption.</IEC61360:langString>
+              <IEC61360:langString lang="kr">MotorPowerConsumptionCollection은 모터 전력 소모량과 관련된 데이터 수집 또는 모음을 의미한다.</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>PayloadCollection</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/PayloadCollection</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">PayloadCollection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">PayloadCollection is a collection of information related to payload.</IEC61360:langString>
+              <IEC61360:langString lang="kr">PayloadCollection은 페이로드와 관련된 정보 모음입니다.</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>DocumentDataCollection</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/DocumentDataCollection</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Document data collection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">DocumentDataCollection is a collection of all information related to a document.</IEC61360:langString>
+              <IEC61360:langString lang="kr">DocumentDataCollection은 문서와 관련된 모든 정보의 모음이다.</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>MotorOperatingSpeedCollection</aas:idShort>
+      <aas:identification idType="IRI">https://admin-shell.io/ids/1/0/MotorOperatingSpeedCollection</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Motor operating speed collection</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">MotorOperatingSpeedCollection is a collection of information related to the rotational speed of the motor.</IEC61360:langString>
+              <IEC61360:langString lang="kr">MotorOperatingSpeedCollection는 모터의 회전 속도와 관련된 정보의 모음이다.</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>CountryCode</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAO730#001</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Country code</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">agreed upon symbol for unambiguous identification of a country</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>FileType</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ACB113#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>04</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">file type</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">verbal description type of attached file such as document, spreadsheet, diagram</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>Attachment</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ACB016#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>04</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">attachment</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType />
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">supplementary file added to the declaration</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>FileName</aas:idShort>
+      <aas:identification idType="IRDI">0112/2///61360_4#ACB112#001</aas:identification>
+      <aas:administration>
+        <aas:version>001</aas:version>
+        <aas:revision>04</aas:revision>
+      </aas:administration>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">file name</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:dataType>STRING</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">complete name of attached file</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+    <aas:conceptDescription>
+      <aas:idShort>DateOfManufacture</aas:idShort>
+      <aas:identification idType="IRDI">0173-1#02-AAR972#002</aas:identification>
+      <aas:embeddedDataSpecification>
+        <aas:dataSpecificationContent>
+          <aas:dataSpecificationIEC61360>
+            <IEC61360:preferredName>
+              <IEC61360:langString lang="en">Date of manufacture</IEC61360:langString>
+            </IEC61360:preferredName>
+            <IEC61360:shortName />
+            <IEC61360:unit />
+            <IEC61360:symbol />
+            <IEC61360:dataType>DATE</IEC61360:dataType>
+            <IEC61360:definition>
+              <IEC61360:langString lang="en">Date from which the production and / or development process is completed or from which a service is provided completely</IEC61360:langString>
+            </IEC61360:definition>
+          </aas:dataSpecificationIEC61360>
+        </aas:dataSpecificationContent>
+        <aas:dataSpecification>
+          <aas:keys>
+            <aas:key type="GlobalReference" local="false" idType="IRI">http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0</aas:key>
+          </aas:keys>
+        </aas:dataSpecification>
+      </aas:embeddedDataSpecification>
+    </aas:conceptDescription>
+  </aas:conceptDescriptions>
+</aas:aasenv>

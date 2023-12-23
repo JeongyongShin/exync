@@ -13,9 +13,9 @@
 		<link href="{% static 'css/fontawesome/all.css' %}" rel="stylesheet">
 
 
-		<script type="text/javascript" src="/resources/js/jquery-1.12.2.min.js"></script>
-		<script type="text/javascript" src="/resources/js/common.js"></script>
-		<script src="/resources/js/jsencrypt.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.2.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/common.js' %}"></script>
+		<script src="{% static 'js/jsencrypt.min.js' %}"></script>
 		
 		<style type="text/css">
 			html,body{
@@ -81,7 +81,7 @@
 			<div class="login_box">
 				<form role="form" name="LoginForm" id="LoginForm">
 					{% csrf_token %}
-					<div class="login_title"><div class="ccb"><div class="ccl">CLOUD MANAGER</div></div></div>
+					<div class="login_title"><div class="ccb"><div class="ccl">Exync Cloud Manager</div></div></div>
 					<div class="login_form">
 						<div><input class="login_text_field" name="userId" type="text"/></div>
 						<div><input class="login_text_field" name="password" type="password"/></div>

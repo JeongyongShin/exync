@@ -328,9 +328,14 @@ Ext.define('app.view.panel.MainPanel',{
 							cls:'button_custom',
 							text: 'Download',
 							handler: function() {
-								let names = selData.data.value.__text.split('/');
-								let fileName = names[names.length-1];
-								location.href = '/aasx/file/download?aasxNm=' + selName + '&path=' + selData.data.value.__text + '&fileNm=' + fileName;
+								if(selData && selData.data && selData.data.value && selData.data.value.__text) {
+									let names = selData.data.value.__text.split('/');
+									let fileName = names[names.length-1];
+									location.href = '/aasx/file/download?aasxNm=' + selName + '&path=' + selData.data.value.__text + '&fileNm=' + fileName;
+								} else {
+									console.log('selData 또는 selData.data가 null입니다.');
+									// 여기서 오류를 적절하게 처리하세요.
+								}
 							}
 						}]
 					}],

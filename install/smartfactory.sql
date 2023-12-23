@@ -26,7 +26,7 @@ USE `smartfactory`;
 --
 -- Table structure for table `AASX`
 --
-
+SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `AASX`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -73,7 +73,12 @@ CREATE TABLE `BASE` (
 
 LOCK TABLES `BASE` WRITE;
 /*!40000 ALTER TABLE `BASE` DISABLE KEYS */;
-INSERT INTO `BASE` VALUES ('01','DASHBOARD URL',NULL,NULL);
+-- INSERT INTO `BASE` VALUES ('01','DASHBOARD URL',NULL,NULL);
+
+UPDATE `BASE`
+SET `BASE_NM` = 'DASHBOARD URL', `NAME1` = NULL, `NAME2` = NULL
+WHERE `BASE_CD` = '01';
+
 /*!40000 ALTER TABLE `BASE` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -372,8 +377,8 @@ CREATE TABLE `django_admin_log` (
   PRIMARY KEY (`id`),
   KEY `django_admin_log_content_type_id_c4bce8eb_fk_django_co` (`content_type_id`),
   KEY `django_admin_log_user_id_c564eba6_fk_account_user_id` (`user_id`),
-  CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
-  CONSTRAINT `django_admin_log_user_id_c564eba6_fk_account_user_id` FOREIGN KEY (`user_id`) REFERENCES `account_user` (`id`)
+  CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`)
+
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -472,7 +477,9 @@ UNLOCK TABLES;
 
 -- Dump completed on 2021-01-27 15:51:44
 
-grant all privileges on smartfactory.* to 'smartfactory'@'localhost' identified by 'cloud13!Smart24!';
-flush privileges;
+SET FOREIGN_KEY_CHECKS=1;
+
+GRANT ALL PRIVILEGES ON smartfactory.* TO 'jy'@'localhost' IDENTIFIED BY 'cubgogo8';
+FLUSH PRIVILEGES;
 
 

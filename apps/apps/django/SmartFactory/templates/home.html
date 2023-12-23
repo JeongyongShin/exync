@@ -1,47 +1,58 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
-    <title>DNA 4.0</title>
+    <title>Exync Technology</title>
     
-    <!--<link rel="stylesheet" type="text/css" href="/resources/extjs/classic/theme-triton/resources/theme-triton-all.css" />-->
-    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/resources/theme-triton-all.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/classic/resources/charts-all.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/triton/resources/ux-all.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
+ 
+    <link rel="stylesheet" type="text/css" href="{% static '4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/resources/theme-triton-all.css' %}" />
+    <!-- <link rel="preload" href="{% static '4781c8d16a8e7cfacdb3167f9737b531/classic/triton/resources/theme-triton/fonts/OpenSans-Bold.ttf'  %}" as="font" type="font/ttf" crossorigin="anonymous"> -->
+
+
+    <link rel="stylesheet" type="text/css" href="{% static '4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/classic/resources/charts-all.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static  '4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/triton/resources/ux-all.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" />
     <!--<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/resources/css/font-awesome.min.css" />-->
     
-    <link rel="stylesheet" type="text/css" href="/resources/js/fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/resources/css/ext-custom.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/css/simplebar.css" />
-    
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/ext-all.js"></script>
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/charts.js"></script>
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/ux.js"></script>
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/theme-triton.js"></script>
-    <script type="text/javascript" src="/resources/js/sortable.js"></script>
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimePicker.js"></script>
-    <script type="text/javascript" src="/resources/4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimeField.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static  'js/fontawesome/css/all.css'   %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static  'css/ext-custom.css'    %}" />
+    <link rel="stylesheet" type="text/css" href="{% static  'css/simplebar.css'     %}" />
 
-    <script type="text/javascript" src="/resources/js/jquery-1.12.2.min.js"></script>
-    <script type="text/javascript" src="/resources/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="/resources/js/jquery.maphilight.min.js"></script>
-    <script type="text/javascript" src="/resources/js/stomp.js"></script>
-    <script type="text/javascript" src="/resources/js/cookie.js"></script>
-    <script type="text/javascript" src="/resources/js/simplebar.js"></script>
-    <script type="text/javascript" src="/resources/js/common.js"></script>
-    <script type="text/javascript" src="/resources/js/xml2json.min.js"></script>
-    <script type="text/javascript" src="/resources/js/xmllint.js"></script>
-    <script type="text/javascript" src="/resources/js/md5.js"></script>
-    <script type="text/javascript" src="/resources/js/aasx.js"></script>
+
+
+    <!-- <script type="text/javascript" src="{% static 'app/main/controller/AASXController.js' %}"></script> -->
+
+    
+    <script type="text/javascript" src="{% static '4781c8d16a8e7cfacdb3167f9737b531/ext-all.js'  %}"></script>
+    <script type="text/javascript" src="{% static '4781c8d16a8e7cfacdb3167f9737b531/packages/charts/classic/charts.js'  %}"></script>
+    <script type="text/javascript" src="{% static '4781c8d16a8e7cfacdb3167f9737b531/packages/ux/classic/ux.js'  %}"></script>
+    <script type="text/javascript" src="{% static '4781c8d16a8e7cfacdb3167f9737b531/classic/theme-triton/theme-triton.js' %}"></script>
+
+    <script type="text/javascript" src="{% static   'js/sortable.js'   %}"></script>
+    <script type="text/javascript" src="{% static  '4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimePicker.js' %}"></script>
+    <script type="text/javascript" src="{% static  '4781c8d16a8e7cfacdb3167f9737b531/custom/DateTimeField.js' %}"></script>
+
+    <script type="text/javascript" src="{% static  'js/jquery-1.12.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/jquery.cookie.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/jquery.maphilight.min.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/stomp.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/cookie.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/simplebar.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/common.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/xml2json.min.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/xmllint.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/md5.js' %}"></script>
+    <script type="text/javascript" src="{% static  'js/aasx.js' %}"></script>
 
 
     <script type="text/javascript">
         Ext.application({
             name: 'app',
             appFolder: '/app/main',
+
             mainView: '{{view}}',
             controllers: [
                 '{{controller}}'
@@ -55,14 +66,14 @@
             fields: ['abbr', 'name'],
             data : [
         {% if user.is_admin %}
-                {"abbr":"ax", "img":'/resources/images/icons/icon_aasx.png', "name":"AASX PACKGE BROWSER"},
-                {"abbr":"ct", "img":'/resources/images/icons/icon_server.png', "name":"클라우드 상태 모니터링"},
-                {"abbr":"mt", "img":'/resources/images/icons/icon_dashboard.png', "name":"기기 모니터링"},
-                {"abbr":"ht", "img":'/resources/images/icons/icon_history.png', "name":"히스토리"},
-                {"abbr":"uc", "img":'/resources/images/icons/icon_user.png', "name":"사용자관리"}
+                {"abbr":"ax", "img": "{% static   'images/icons/icon_aasx.png'  %}"  , "name":"AASX PACKGE BROWSER"},
+                {"abbr":"ct", "img":"{% static  'images/icons/icon_server.png'  %}", "name":"클라우드 상태 모니터링"},
+                {"abbr":"mt", "img":"{% static   'images/icons/icon_dashboard.png'  %}" , "name":"기기 모니터링"},
+                {"abbr":"ht", "img":"{% static  'images/icons/icon_history.png'    %}" , "name":"히스토리"},
+                {"abbr":"uc", "img":"{% static   'images/icons/icon_user.png'   %}" , "name":"사용자관리"}
         {% else %}
-                {"abbr":"mt", "img":'/resources/images/icons/icon_dashboard.png', "name":"모니터링"},
-                {"abbr":"ht", "img":'/resources/images/icons/icon_history.png', "name":"히스토리"},
+                {"abbr":"mt", "img":"{% static    'images/icons/icon_dashboard.png'   %}" , "name":"모니터링"},
+                {"abbr":"ht", "img":"{% static   'images/icons/icon_history.png'    %}" , "name":"히스토리"},
         {% endif %}
             ]
         });
@@ -142,114 +153,114 @@
     .icon_motor{
         width:100%;
         height:100%;
-        background:url(/resources/images/icons/motor.png) 0px 0px no-repeat;
+        background:url({% static  'images/icons/motor.png' %}    ) 0px 0px no-repeat;
     }
 
     .icon_package{
         width:30px;
-        background:url(/resources/images/icons/icon_package.png) 0px 8px no-repeat;
+        background:url({% static   'images/icons/icon_package.png'   %}   ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_env{
         width:30px;
-        background:url(/resources/images/icons/icon_env.png) 0px 8px no-repeat;
+        background:url({% static  'images/icons/icon_env.png'  %}   ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_asset{
         width:30px;
-        background:url(/resources/images/icons/icon_asset.png) 0px 8px no-repeat;
+        background:url({% static  'images/icons/icon_asset.png'  %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_cd{
         width:30px;
-        background:url(/resources/images/icons/icon_cd.png) 0px 8px no-repeat;
+        background:url({% static   'images/icons/icon_cd.png'  %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_aas{
         width:30px;
-        background:url(/resources/images/icons/icon_aas.png) 0px 8px no-repeat;
+        background:url({% static  'images/icons/icon_aas.png'  %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_prop{
         width:30px;
-        background:url(/resources/images/icons/icon_prop.png) 0px 8px no-repeat;
+        background:url( {% static  'images/icons/icon_prop.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_sub{
         width:30px;
-        background:url(/resources/images/icons/icon_sub.png) 0px 8px no-repeat;
+        background:url({%  static 'images/icons/icon_sub.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_sub2{
         width:30px;
-        background:url(/resources/images/icons/icon_sub2.png) 0px 8px no-repeat;
+        background:url({%  static 'images/icons/icon_sub2.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_file{
         width:30px;
-        background:url(/resources/images/icons/icon_file.png) 0px 8px no-repeat;
+        background:url({% static 'images/icons/icon_file.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_coll{
         width:30px;
-        background:url(/resources/images/icons/icon_coll.png) 0px 8px no-repeat;
+        background:url({% static  'images/icons/icon_coll.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_ref{
         width:30px;
-        background:url(/resources/images/icons/icon_ref.png) 0px 8px no-repeat;
+        background:url({% static  'images/icons/icon_ref.png' %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_mlp{
         width:30px;
-        background:url(/resources/images/icons/icon_mlp.png) 0px 8px no-repeat;
+        background:url( {% static  'images/icons/icon_mlp.png'  %}  ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_ent{
         width:30px;
-        background:url(/resources/images/icons/icon_ent.png) 0px 8px no-repeat;
+        background:url( {% static 'images/icons/icon_ent.png' %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_rel{
         width:30px;
-        background:url(/resources/images/icons/icon_rel.png) 0px 8px no-repeat;
+        background:url({% static 'images/icons/icon_rel.png'  %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_rela{
         width:30px;
-        background:url(/resources/images/icons/icon_rela.png) 0px 8px no-repeat;
+        background:url( {%  static 'images/icons/icon_rela.png' %} ) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_img{
         width:30px;
-        background:url(/resources/images/icons/icon_img.png) 0px 8px no-repeat;
+        background:url( {%  static 'images/icons/icon_img.png' %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_doc{
         width:30px;
-        background:url(/resources/images/icons/icon_doc.png) 0px 8px no-repeat;
+        background:url({%  static 'images/icons/icon_doc.png'   %}) 0px 8px no-repeat;
         background-size:30px;
     }
 
     .icon_mainmenu {
         width:20px;
-        background:url(/resources/images/icons/icon_menu.png) 0px 5px no-repeat;
+        background:url({%  static 'images/icons/icon_menu.png' %}) 0px 5px no-repeat;
         background-size:20px;
     }
 
@@ -323,6 +334,11 @@
         }
             
 	</script>
+
+
+
+
+
 </head>
 <body>
 </body>

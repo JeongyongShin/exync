@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <meta charset="EUC-KR">
@@ -15,9 +16,9 @@
     </style>
     <link rel="stylesheet" type="text/css" href="/resources/css/common.css" />
 
-    <script src="/resources/js/stomp.js"></script>
-    <script src="/resources/js/mqtt.js"></script>
-    <script src="/resources/js/chart.min.js"></script>
+    <script src="{% static 'js/stomp.js'   %}"></script>
+    <script src="{% static 'js/mqtt.js'   %}"></script>
+    <script src="{% static 'js/chart.min.js'    %}"></script>
     <script type="text/javascript">
         let lineSize = 500;
         var lineData = []

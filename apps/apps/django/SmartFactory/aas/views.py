@@ -107,6 +107,8 @@ def aasxEdit(request):
         if form.is_valid():
             print('aasxEdit- form true')
             aasx_id = form.cleaned_data['aasx_id']
+
+            print("views.py --> aasxEdit()  -- aasx_id : ", aasx_id)
             ver = form.cleaned_data['ver']
             desc = form.cleaned_data['desc']
             response = apps.editAASX(aasx_id, ver, desc)

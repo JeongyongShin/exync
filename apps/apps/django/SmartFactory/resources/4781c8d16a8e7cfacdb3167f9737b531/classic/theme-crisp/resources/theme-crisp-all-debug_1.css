@@ -5,6 +5,13 @@
  */
     position: relative;
 }
+
+.readonly-field .x-form-item-body {
+    background-color: black; 
+    color: white; 
+}
+
+
 /* /Users/space/buildAgent/work/8cc7421dd8da164c/staging/packages/core/sass/src/util/SizeMonitor.scss:9 */
 .x-size-monitors {
     position: absolute;
@@ -11934,6 +11941,8 @@ a.x-color-picker-item:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     opacity: 0.3;
 }
+
+
 /* /Users/space/buildAgent/work/8cc7421dd8da164c/staging/classic/theme-neutral/sass/src/grid/column/Check.scss:51 */
 .x-grid-hd-checker-on .x-column-header-checkbox:after,
 .x-grid-checkcolumn-checked:after {

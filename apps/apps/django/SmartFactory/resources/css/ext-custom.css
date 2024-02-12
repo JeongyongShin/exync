@@ -101,6 +101,10 @@
     background-color:transparent;
 }
 
+.readonly-field .x-form-item-body {
+    background-color: black; 
+    color: white; 
+}
 
 .log_combo .x-form-text-default {background-color: transparent;}
 .log_combo .x-form-trigger-wrap-default {border-color: white;}

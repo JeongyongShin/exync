@@ -175,14 +175,18 @@ Ext.define('app.view.panel.config.AASXConfigPanel',{
 			    },
 		        defaultType: 'textfield',
                 items: [{
-                    fieldLabel: 'ID',
-                    name: 'id',
-                    value: selection.id,
-                },{
 		            fieldLabel: '생성자',
                     name: 'userId',
                     value: selection.data.fields.userId,
+                    readOnly: true, // 읽기 전용으로 설정
+                    fieldStyle: 'background-color: #000000; color: #909497;  border: none;', 
 		        },{
+                    fieldLabel: 'Database ID',
+                    name: 'id',
+                    value: selection.data.pk,
+                    readOnly: true, // 읽기 전용으로 설정
+                    fieldStyle: 'background-color: #000000; color: #909497;  border: none;', 
+                },{
 		            fieldLabel: 'AAS명',
 		            name: 'aasxNm',
 		            value: selection.data.aasxNm,

@@ -202,6 +202,8 @@ def editAASX(aasx_id, ver, desc):
 
     try:
         # AASX 인스턴스를 찾고 해당 필드를 업데이트합니다.
+
+        print("apps.py -->  editAASX --> aasx_id : ", aasx_id, ", desc : ", desc)
         aasx = Aasx.objects.get(pk=aasx_id)  # pk는 primary key (고유 식별자)
         aasx.version = ver
         aasx.desc = desc

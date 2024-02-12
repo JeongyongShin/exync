@@ -1,0 +1,36 @@
+@startuml
+
+package "Exync Django Project" {
+    [aas]
+    [aas_rest]
+    [account]
+    [app]
+    [commons]
+    [config]
+    [file]
+    [models]
+    [proxy]
+
+    [aas] --> [models]
+    [aas_rest] --> [models]
+    [account] --> [models]
+    [app] --> [models]
+
+    [aas] ..> [aas_rest] : uses
+    [account] ..> [aas_rest] : uses
+    [app] ..> [aas_rest] : uses
+
+    [aas_rest] ..> [proxy] : uses
+    [app] ..> [proxy] : uses
+
+    [config] ..> [aas]
+    [config] ..> [aas_rest]
+    [config] ..> [account]
+    [config] ..> [app]
+    [config] ..> [commons]
+    [config] ..> [file]
+    [config] ..> [models]
+    [config] ..> [proxy]
+}
+
+@enduml

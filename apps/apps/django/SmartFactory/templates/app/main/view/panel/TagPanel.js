@@ -135,7 +135,7 @@ Ext.define('app.view.panel.TagPanel',{
 			editForm = Ext.create('Ext.form.Panel', {
 		        bodyPadding: 5,
 		        layout: 'anchor',
-            	url : '/aasx/add',
+            	url : '/aasx/edit',
     	        fileUpload: true,
 			    fieldDefaults:{
 			        labelAlign:'left',
@@ -179,8 +179,10 @@ Ext.define('app.view.panel.TagPanel',{
 		            formBind: true, //only enabled once the form is valid
 		            disabled: true,
 		            handler: function() {
-		                var form = editForm.getForm();
+                        var form = editForm.getForm();
+                        console.log("TagPanel.js --> Form data before submit:", form.getValues()); // 로깅 추가
                         if (form.isValid()) {
+                            console.log("Form is valid, submitting..."); // 유효성 검사 성공시 로깅 추가
                             var params = {};
 		                    for ( var key in form.getValues() ) {
                                 params[key] = form.getValues()[key];
@@ -205,6 +207,11 @@ Ext.define('app.view.panel.TagPanel',{
                                     Ext.Msg.alert('수기 수정', '오류가 발생하였습니다 다시시도해주세요');
                                 }
                             });
+                        }
+
+                        else {
+                            console.log("TagPanel.js -->  Form is invalid, not submitting."); // 유효성 검사 실패시 로깅 추가
+                            // ... 나머지 코드 ...
                         }
 		            }
 		        }, {

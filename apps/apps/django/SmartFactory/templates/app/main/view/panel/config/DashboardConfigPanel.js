@@ -65,7 +65,7 @@ Ext.define('app.view.panel.config.DashboardConfigPanel',{
                             width:'50%',
                             name: 'sysUrl',
                             inputType:'url',
-                            value: ''
+                            value: 'http://192.168.0.4:3000/login' // 이 부분을 적절한 URL로 수정
                     }/*,{
                         xtype:'combobox',
                         store:refStore,

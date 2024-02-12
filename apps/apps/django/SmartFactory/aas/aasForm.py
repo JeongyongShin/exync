@@ -11,3 +11,9 @@ class AASXUploadForm(forms.Form):
     ver = forms.CharField(max_length=10)
     desc = forms.CharField(max_length=1000)
     file = forms.FileField()
+
+
+class AASXEditForm(forms.Form):
+    aasx_id = forms.IntegerField(widget=forms.HiddenInput())  # 수정할 AASX의 ID
+    ver = forms.CharField(max_length=10)
+    desc = forms.CharField(max_length=1000)

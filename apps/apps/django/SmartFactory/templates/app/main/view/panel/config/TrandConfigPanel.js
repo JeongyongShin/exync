@@ -215,7 +215,7 @@ Ext.define('app.view.panel.config.TrandConfigPanel',{
 	                        },
 	                        failure: function(form, action) {
 		                        editWindow.close();
-	                            Ext.Msg.alert('등록에 실패하였습니다', '오류가 발생하였습니다 다시시도해주세요');
+	                            Ext.Msg.alert('등록에 실패하였습니다', '오류4가 발생하였습니다 다시시도해주세요');
 	                        }
 	                    });
 		            }

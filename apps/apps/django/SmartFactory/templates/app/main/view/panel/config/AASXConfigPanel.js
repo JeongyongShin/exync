@@ -142,7 +142,7 @@ Ext.define('app.view.panel.config.AASXConfigPanel',{
                         };
 		            }
 		        }, {
-		            text: '취소',
+		            text: '취소_',
 		            handler : function() {
 		            	addWindow.close();
 		            }
@@ -161,10 +161,11 @@ Ext.define('app.view.panel.config.AASXConfigPanel',{
         function createEditForm(selection){
             var editWindow = null;
             var editForm = null;
+            console.log("createEditForm --- selection:", selection); // 로깅 추가
 			editForm = Ext.create('Ext.form.Panel', {
 		        bodyPadding: 5,
 		        layout: 'anchor',
-            	url : '/aasx/add',
+            	url : '/aasx/edit',
     	        fileUpload: true,
 			    fieldDefaults:{
 			        labelAlign:'left',
@@ -173,11 +174,15 @@ Ext.define('app.view.panel.config.AASXConfigPanel',{
 			        msgTarget:'under'
 			    },
 		        defaultType: 'textfield',
-		        items: [/*{
-		            xtype:'displayfield',
-		            fieldLabel: 'AAS명',
-		            value: selection.data.userId
-		        },*/{
+                items: [{
+                    fieldLabel: 'ID',
+                    name: 'id',
+                    value: selection.id,
+                },{
+		            fieldLabel: '생성자',
+                    name: 'userId',
+                    value: selection.data.fields.userId,
+		        },{
 		            fieldLabel: 'AAS명',
 		            name: 'aasxNm',
 		            value: selection.data.aasxNm,
@@ -209,23 +214,52 @@ Ext.define('app.view.panel.config.AASXConfigPanel',{
 		            disabled: true,
 		            handler: function() {
 		                showLoading(true, editWindow);
-		            	var usr = editForm.getForm();
-		            	usr.submit({
-	                    	url : '/user/edit',
-	                        success: function(form, action) {
-	                    	    showLoading(false, editWindow);
-	                            Ext.Msg.alert('사용자수정 완료','수정하였습니다');
-	                            editWindow.close();
-    			                Ext.getCmp('Usgrid').getStore().loadPage(pageNum);
-	                        },
-	                        failure: function(form, action) {
-				                showLoading(false, editWindow);
-	                            Ext.Msg.alert('등록에 실패하였습니다', '오류가 발생하였습니다 다시시도해주세요');
-	                        }
-	                    });
+                        var form = editForm.getForm();
+                        console.log("Form data before submit:", form.getValues()); // 로깅 추가
+                        if (form.isValid()) {
+                            console.log("Form is valid, submitting..."); // 유효성 검사 성공시 로깅 추가
+                        }
+
+                    // selection 객체에서 pk 값을 추출하여 aasx_id로 설정합니다.
+                    var aasxId = selection.data.pk;  // 데이터베이스의 기본 키 값을 사용합니다.
+
+
+                        Ext.Ajax.request({
+                            url: '/aasx/edit',
+                            method: 'POST',
+                            params: {
+                                aasx_id: aasxId,
+                                aasxNm: form.findField('aasxNm').getValue(),
+                                ver: form.findField('ver').getValue(),
+                                desc: form.findField('desc').getValue()
+                            },
+
+
+                            success: function(response, opts) {
+                                showLoading(false, editWindow);
+                                var result = Ext.decode(response.responseText);
+                                if(result.error) {
+                                    Ext.Msg.alert('수정 실패', result.message);
+                                } else {
+                                    Ext.Msg.alert('AASX 수정 완료', '수정하였습니다');
+                                    editWindow.close();
+                                    Ext.getCmp('Usgrid').getStore().loadPage(pageNum);
+                                }
+                            },
+                            failure: function(response, opts) {
+                                showLoading(false, editWindow);
+                                console.log('server-side failure with status code ' + response.status);
+                                Ext.Msg.alert('서버 오류', '수정을 완료할 수 없습니다.');
+                            }
+                        });
+                        
+
+
+
+
 		            }
 		        }, {
-		            text: '취소',
+		            text: '취소_',
 		            handler : function() {
 		            	editWindow.close();
 		            }

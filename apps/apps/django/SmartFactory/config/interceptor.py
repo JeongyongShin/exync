@@ -20,6 +20,7 @@ def interceptor(request):
             return redirect('/')
         elif request.path == '/server':
             return app.views.cloud(request)
+
         elif request.path == '/monitor':
             return app.views.monitor(request)
         elif request.path == '/history':

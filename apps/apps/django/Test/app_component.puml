@@ -1,0 +1,17 @@
+@startuml
+
+package "App Module" {
+    [admin.py] - [Django Admin Interface]
+    [apps.py] - [App Configuration]
+    [models.py] - [Database Models]
+    [views.py] - [Request Handling]
+    [tests.py] - [Test Cases]
+    [migrations] - [Database Migrations]
+
+    [models.py] --> [admin.py] : registers models
+    [models.py] --> [views.py] : used in views
+    [models.py] --> [tests.py] : used in tests
+    [migrations] --> [models.py] : reflects changes
+}
+
+@enduml

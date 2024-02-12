@@ -6,8 +6,9 @@ from models.smartfactory import Common
 from models.smartfactory import LoginLog
 
 PAGE_SIZE = 30
-IP_ADDRESS = '/grafana'
+IP_ADDRESS = '192.168.0.4:3000/d/f1d1c593-89de-49e6-b30b-3b144efffcdb/exync-cloud-dashboard?orgId=1&refresh=5s&from=now-5m&to=now'
 
+# IP_ADDRESS = 'www.sec.com'
 
 def get_client_ip(request):
     x_forwarded_for = request.META.get('X-Forwarded-For')
@@ -26,11 +27,17 @@ def saveLoginLog(userId, ip, state):
     log.save()
 
 
-def getDashboardUrl(request, baseCd, commCd):
+def getGrafanaDashboardUrl( ):
+    full_url = f"https://www.exyc.co.kr:3000/d/f1d1c593-89de-49e6-b30b-3b144efffcdb/exync-cloud-dashboard?orgId=1&refresh=auto&from=now-30m&to=now"
+    print('full_url : ', full_url)
+    return full_url
 
+
+def getDashboardUrl(request, baseCd, commCd):
     comm = Common.objects.get(baseCd=baseCd, commCd=commCd)
-    ip = IP_ADDRESS+comm.item1
-    return ip
+    full_url = f"http://{IP_ADDRESS}{comm.item1}"
+    print('full_url : ', full_url)
+    return full_url
 
 
 def getCommon(data):

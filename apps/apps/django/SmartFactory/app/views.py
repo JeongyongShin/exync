@@ -70,7 +70,8 @@ def history(request):
 @login_required
 def cloud(request):
     if request.method == 'GET':
-        return render(request, 'home.html',{'controller': 'CloudMonitorController', 'view': 'app.view.viewport.cloudmonitor', 'title': '클라우드 상태 모니터링', 'url': app.getDashboardUrl(request, '01', '00001')})
+        return render(request, 'home.html',{'controller': 'CloudMonitorController', 'view': 'app.view.viewport.cloudmonitor', 'title': '클라우드 상태 모니터링', 'url': app.getGrafanaDashboardUrl()})
+
 
 
 @login_required

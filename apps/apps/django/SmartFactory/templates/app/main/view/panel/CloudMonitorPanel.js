@@ -20,12 +20,12 @@ Ext.define('app.view.panel.CloudMonitorPanel',{
         Ext.apply(this, {
                 reloadData:function(){
                         try {
-                                $('#boardFrame').contents().find('.sidemenu').remove();
-                                $('#boardFrame').contents().find('.navbar-buttons--actions').remove();
-                                $('#boardFrame').contents().find('.navbar').css('position','absolute')
-                                    .css('left','70%')
-                                    .css('right','0px');
-                                $('#boardFrame').contents().find('.navbar-page-btn').remove();
+                                // $('#boardFrame').contents().find('.sidemenu').remove();
+                                // $('#boardFrame').contents().find('.navbar-buttons--actions').remove();
+                                // $('#boardFrame').contents().find('.navbar').css('position','absolute')
+                                //     .css('left','70%')
+                                //     .css('right','0px');
+                                // $('#boardFrame').contents().find('.navbar-page-btn').remove();
 
                                 } catch (e) {
                                         console.log(e);

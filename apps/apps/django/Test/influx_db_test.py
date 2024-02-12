@@ -18,7 +18,7 @@ client = InfluxDBClient(url=INFLUX_URL, token=INFLUX_TOKEN)
 print('client created')
 
 # 데이터 포인트 정의
-point = Point("temperature").tag("location", "room").field("value", 25.0).time(datetime.utcnow())
+point = Point("temperature").tag("location", "room").field("value", 27.0).time(datetime.utcnow())
 print('point created')
 
 # 데이터 쓰기

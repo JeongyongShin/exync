@@ -10,6 +10,7 @@ from django.core import serializers
 
 from aas.aasForm import FileUploadForm
 from aas.aasForm import AASXUploadForm
+from aas.aasForm import AASXEditForm
 
 
 from models.smartfactory import Aasx
@@ -102,14 +103,16 @@ def aasxAdd(request):
 
 def aasxEdit(request):
     if request.method == 'POST':
-        form = AASXUploadForm(request.POST, request.FILES)
+        form = AASXEditForm(request.POST)  # 새로운 폼 사용
         if form.is_valid():
-            print('form true')
-            apps.addAASX(request.FILES['file'], request.POST['aasxNm'])
-            # apps.addSupplementaryFile(form)
-            return JsonResponse({'error': False, 'errors': form.errors})
+            print('aasxEdit- form true')
+            aasx_id = form.cleaned_data['aasx_id']
+            ver = form.cleaned_data['ver']
+            desc = form.cleaned_data['desc']
+            response = apps.editAASX(aasx_id, ver, desc)
+            return JsonResponse(response)
         else:
-            print('form false')
+            print('aasxEdit -- Form errors:', form.errors)  # 유효성 검사 실패시 어떤 오류인지 로깅 추가
             return JsonResponse({'error': True, 'errors': form.errors})
 
 

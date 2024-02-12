@@ -196,6 +196,28 @@ def addAASX(id, file, aasxNm, ver, desc):
         print('ERROR')
     return response
 
+
+def editAASX(aasx_id, ver, desc):
+    response = {'code': -1, 'message': 'FAILURE'}
+
+    try:
+        # AASX 인스턴스를 찾고 해당 필드를 업데이트합니다.
+        aasx = Aasx.objects.get(pk=aasx_id)  # pk는 primary key (고유 식별자)
+        aasx.version = ver
+        aasx.desc = desc
+        aasx.save()
+
+        response['code'] = 100
+        response['message'] = 'SUCCESS'
+    except Aasx.DoesNotExist:
+        response['message'] = 'AASX does not exist'
+    except Exception as ex:
+        print(ex)
+        response['message'] = 'An error occurred'
+
+    return response
+
+
 def getAASXList(userId, data):
     response = {'code':-1, 'items':[], 'page':0, 'totalCount':0}
     try:

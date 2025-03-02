@@ -1,7 +1,9 @@
 # Tangible Digital Twin과 Industry 4.0
 
 Industry 4.0의 초창기 목표는 디지털화와 자동화에 초점을 맞췄지만, 기술의 빠른 발전과 함께 사용자의 요구와 Digital Twin 중심의 접근 방식의 필요성이 부각되었습니다.
-![ESP32 Image 1](https://github.com/JeongyongShin/ESP32/blob/main/png/dt_1.png?raw=true)
+![ESP32 Image 1](https://github.com/JeongyongShin/exync/blob/main/png/dt_1.png?raw=true)
+
+
 
 ## Digital Twin과 AAS (Asset Administration Shell)
 
